@@ -1,0 +1,201 @@
+﻿	#player {
+	width: 100%; 									/* ancho del reproductor */
+	height: 56px; 								/* alto del reproductor */
+	background-image: url("../images/logo.png"); 		/* logo 100x100 */
+	position: absolute;
+	background-repeat: no-repeat;
+	}
+		
+	#play{
+	height: 26px;  									/* alto botÃ³n play */
+	width: 25px;									/* ancho botÃ³n play */
+	background-image:url("../images/play.png");			/* imagen botÃ³n play */	
+	}
+	
+	#play:hover{
+	height: 26px;									/* alto botÃ³n play activado (cuando el puntero del mouse estÃ¡ encima) */
+	width: 25px;									/* ancho botÃ³n play activado */
+	background-image:url("../images/playh.png");			/* imagen botÃ³n play activado */
+	}
+	
+	#pause{
+	height: 26px;  									/* alto botÃ³n pausa */
+	width: 25px;									/* ancho botÃ³n pausa */
+	background-image:url("../images/pausa.png");
+	}
+	
+	#stausplay{
+	background-image: url(../images/statusplay.png);
+	height: 26px;  									/* alto botÃ³n pausa */
+	width: 31px;									/* ancho botÃ³n pausa */
+	position: absolute;								/* respecto del extremo izq.sup. del reproductor */
+	left: 229px;
+	top: 10px;
+	}
+	
+	#pause:hover{
+	height: 26px;									/* alto botÃ³n pausa activado (cuando el puntero del mouse estÃ¡ encima) */
+	width: 25px;									/* ancho botÃ³n pausa activado */
+	background-image:url("../images/pausah.png");		/* imagen botÃ³n pausa activado */
+	}
+	
+	#play, #pause {									/* posiciÃ³n botones play y pause */
+	position: absolute;								/* respecto del extremo izq.sup. del reproductor */
+	left: 6px;
+	top: 14px;
+	}
+	
+	#titulo{
+	width: 130px;
+	position: absolute;
+	left: 90px;
+	top: 20px;		
+	color: #0c8046;
+	text-align: center;
+	font-family: Arial;
+    font-size: 12px;
+	}
+
+	  	
+	#listeners {
+	position: absolute;
+	width: 21px;
+	text-align: center;
+	font-family: Arial;
+	color: #0c8046;
+	font-size: 12px;
+	font-weight: bold;
+	left: 234px;
+	top: 22px;
+	background-image: -webkit-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	border-radius: 5px;
+	}
+
+	#oyentes {
+	position: absolute;
+	width: 25px;
+	text-align: center;
+	font-family: Arial;
+	color: #0c8046;
+	font-size: 11px;
+	font-weight: bold;
+	left: 232px;
+	top: 22px;
+	background-image: -webkit-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(250,250,250,1.00) 0%,rgba(253,253,253,1.00) 100%);
+	border-radius: 5px;
+	}
+
+	#track-title {
+	position: absolute;
+	top: 44px;
+	background-color: transparent;
+	border-radius: 30px 30px 30px 30px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 9px;
+	color: #0c8046;
+	width: 240px;
+	left: 7px;
+	}
+
+
+/* @group barra de volumen rojo #FF0004 --verde claro #76D183 */
+
+div.jp-interface {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+
+div.jp-volume-bar {
+	position: absolute;
+	overflow: hidden;
+	background: url("../images/volumengre.png");
+	width: 35px;
+	height: 24px;
+	cursor: pointer;
+	top: 14px;
+	left: 38px;
+}
+
+div.jp-volume-bar-value {
+	background: url("../images/volumenbg.png");
+	width:35px;
+	height:24px;
+}
+
+/* @group mute */
+
+div.jp-video ul.jp-controls,
+div.jp-interface ul.jp-controls li {
+	display:inline;
+	float: left;
+}
+
+a.jp-mute,
+a.jp-unmute{
+	position: absolute;
+	width: 12px;
+	height: 11px;
+	top: 13px;
+	left: 78px;
+}
+
+a.jp-mute {
+	background: url("../images/mute.png");
+}
+a.jp-mute:hover {
+	background: url("../images/mutehover.png");
+}
+
+div.jp-interface ul.jp-controls a {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+/* @group volumen max */
+
+a.jp-volume-max {
+	position: absolute;
+	width: 12px;
+	height: 11px;
+	top: 28px;
+	left: 78px;
+}
+
+/* @group Imagenes mute unmute hover volumen max y barra volumen */
+
+a.jp-volume-max {
+	background: url("../images/volmax.png");
+}
+a.jp-volume-max:hover {
+	background: url("../images/volmaxhov.png");
+}
+
+a.jp-mute {
+	background: url("../images/mute.png");
+}
+a.jp-mute:hover {
+	background: url("../images/mutehover.png");
+}
+a.jp-unmute {
+	background: url("../images/unmute.png");
+	display: none;
+}
+a.jp-unmute:hover {
+	background: url("../images/unmutehov.png");
+}
+a.jp-volume-max {
+	background: url("../images/volmax.png");
+}
+a.jp-volume-max:hover {
+	background: url("../images/volmaxhov.png");
+}

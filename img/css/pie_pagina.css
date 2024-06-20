@@ -1,0 +1,41 @@
+#contenedor_pie {
+	width: 1005px;
+	height: 231px;
+	position: relative;
+	background-image: url(../images/img_footer.png);
+	margin-top: -20px;
+}
+
+#telefono {
+	position: absolute;
+	left: 587px;
+	top: 35px;
+}
+
+#correo {
+	position: absolute;
+	left: 770px;
+	top: 35px;
+}
+
+
+.pie {
+	position: absolute;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	width: 400px;
+	line-height: 14px;
+	left: 251px;
+	top: 95px;
+	text-align: center;
+	color: #232323;
+	height: 74px;
+}
+
+#creditos {
+	position: absolute;
+	left: 135px;
+	top: 186px;
+	color: #FFF;
+	font-size: 12px;
+}

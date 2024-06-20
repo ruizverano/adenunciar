@@ -1,0 +1,132 @@
+#contenedor_banner{
+	width: 1005px;
+	height: 170px;
+	background: url(../images/cab.png);
+	position: relative;
+	}
+#redes {
+	width: 263px;
+	height: 29px;
+	position: absolute;
+	left: 693px;
+	top: 144px;
+	}
+#facebook {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/face_s.png);	
+}
+
+#youtube {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/youtube_s.png);	
+}
+
+#twitter {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/twitter_s.png);	
+}
+
+#flickr {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/flicker_s.png);	
+}
+
+#pinterest {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/pinterest_s.png);	
+}
+
+#google {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/goo_s.png);	
+}
+
+#instagram {
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/instagram_s.png);	
+}
+
+#facebook:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/face_on.png);
+	cursor:pointer;	
+}
+
+#youtube:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/youtube_on.png);	
+	cursor:pointer;	
+}
+
+#twitter:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/twitter_on.png);	
+	cursor:pointer;	
+}
+
+#flickr:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/flicker_on.png);
+	cursor:pointer;		
+}
+
+#pinterest:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/pinterest_on.png);
+	cursor:pointer;		
+}
+
+#google:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/goo_on.png);	
+	cursor:pointer;	
+}
+
+#instagram:hover{
+	width: 29px;
+	height:29px;
+	float: left;
+	margin-right: 8px;
+	background:url(../images/instagram_on.png);	
+	cursor:pointer;	
+}
+

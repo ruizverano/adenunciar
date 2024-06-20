@@ -1,0 +1,424 @@
+/* Hoja de estilos CSS predeterminada para un nuevo proyecto de aplicación Web*/
+
+/* CUERPO DE PAGINA PRINCIPALES */
+BODY
+{
+	margin-top: 0px;
+	font-size: 12px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TITULOS PAGINAS */
+.modalBackground
+{
+    background-color: Black;
+    filter: alpha(opacity=70);
+    opacity: 0.8;
+}
+.modalPopup
+{
+    background-color: #FFFFFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 30px;    
+    width: 680px;
+    height: 450px;
+    padding-left:10px;
+}
+.barratitulo_1
+{
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 100%; 
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #21610B;
+	text-align: left;
+	height: 25px;
+	text-decoration: none;
+}
+.titulo_confirmacion
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#contorno_integrado_1 {
+	border:1px solid #006900;	
+	border-radius: 10px;	
+	height: 200px;
+	width: 630px;
+	margin-left:10px;
+	margin-top:10px;
+	            padding:15px;
+                background-color:#fff;
+                -moz-box-shadow:1px 3px 15px #ddd;
+                -webkit-box-shadow:1px 3px 15px #ddd;
+                box-shadow:1px 18px 15px #969696;	
+}
+.campomayuscula
+        {  
+            background : #CCFFFF;            
+            border: 1px solid Black;
+            padding: 3px 3px;
+            font-size:12px;
+            border-radius: 5px;
+            text-transform: uppercase;                       
+  }
+.titulo
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.titulo_dos
+{
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #039C00;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 18px;
+}
+#contorno_integrado {
+	border:1px solid #006900;	
+	border-radius: 10px;	
+	height: 200px;
+	width: 630px;
+	margin-left:10px;
+	margin-top:35px;
+	            padding:15px;
+                background-color:#fff;
+                -moz-box-shadow:1px 3px 15px #ddd;
+                -webkit-box-shadow:1px 3px 15px #ddd;
+                box-shadow:1px 18px 15px #969696;	
+}
+.tituloerror
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.subtitulo
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: #039C00;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+	
+/*TOP de pagina*/
+
+.topblanco
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.top
+{
+	font-weight: bold;
+	font-size: 10px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.top2
+{
+	font-size: 10px;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.topred
+{
+	font-weight: bold;
+	font-size: 9px;
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+/* LINKS TOP */
+.topactivo
+{
+	font-weight: bold;
+	font-size: 9px;
+	color: midnightblue;
+	text-decoration: none;
+}
+
+.top:link
+{
+	font-size: 9px;
+	color: #9f290d;
+	text-decoration: none;
+}	
+		
+.top:visited	{	
+	font-size: 9px;
+	text-decoration:	none;
+	color:	#9f290d;
+	}	
+		
+.top:active	{	
+	font-size: 9px;
+	text-decoration:	none;
+	color:	#9f290d;
+	}	
+		
+.top:hover	{
+	font-size: 9px;
+	color: darkgray;
+	text-decoration: underline;
+}
+	
+/* LINKS GENERALES */
+
+A:link
+{
+	font-size: 12px;
+	color: midnightblue;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}	
+		
+A:visited	{	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:	none;
+	color:	midnightblue;
+	}	
+		
+A:active	{	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration:	none;
+	color:	midnightblue;
+	}	
+		
+A:hover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: darkgray;
+	text-decoration: underline;
+}
+/* TIPO DE TEXTO */
+
+.texto
+{
+	text-justify: distribute;
+	font-size: 12px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+p	{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #084900;
+	}	
+
+/* PIE DE PAGINA */
+.pie
+{
+	font-weight: normal;
+	font-size: 10px;
+	color: saddlebrown;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+/* TABLAS */
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+td
+{
+	font-size: 10pt;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+    margin-left: 440px;
+}
+
+.tabla
+{
+	border-right: #9f290d 1px solid;
+	border-top: #9f290d 1px solid;
+	margin: 2px;
+	border-left: #9f290d 1px solid;
+	border-bottom: #9f290d 1px solid;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*FORMAS*/
+input{
+	font-size: 12px;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #DCDCBA;
+	border: 1px solid #734921;
+    height: 19px;
+}
+.input_boton{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 12px;
+	background-color: #145A00;
+	padding: 2px;
+	margin: 0px;
+	border-top-style: double;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: double;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-top-color: #CCCCCC;
+	border-right-color: #435689;
+	border-bottom-color: #435689;
+	border-left-color: #CCCCCC;
+	font-weight: normal;
+	text-transform: none;
+	height: auto;
+	
+}
+
+/* OTRAS FORMAS */
+select
+{
+	font-size: 10px;
+	color: #084900;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #DCDCBA;
+}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #734521;
+	background-color: #DEDFBD;
+}
+/*Menu unico*/
+.menu
+{
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 164px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dedfbd;
+	text-align: center;
+	background-image:url('../img/botonver1.png');
+	cursor: default;
+}
+.menu:hover
+{
+	//font-size: 14px;
+	color: black;
+	background-image:url('../img/botonver2.png');
+	cursor: default;
+}
+.menuover
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: saddlebrown;
+	width: 160px;
+}
+.menuclick
+{
+	font-size: 10pt;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dedfaa;
+	width: 160px;
+}
+.menUp
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: saddlebrown;
+	width: 160px;
+}
+
+/*Menu Ir Inicio*/
+
+.menuini
+{
+	font-size: 10pt;
+	background-attachment: fixed;
+	background-image: url(../Imagenes/home_menu.gif);
+	width: 40px;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 35px;
+}
+.menu_imag
+{
+	font-size: 10pt;
+	background-image: url(../Imagenes/fondo_menu.gif);
+	width: 89px;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 35px;
+	text-align: center;
+}
+.menu_imag_over
+{
+	font-size: 10pt;
+	background-image: url(../Imagenes/fondo_menu2.gif);
+	width: 89px;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 35px;
+	text-align: center;
+}
+.menu_imag_down
+{
+	font-size: 10pt;
+	background-image: url(../Imagenes/fondo_menu.gif);
+	width: 89px;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 35px;
+	text-align: center;
+}
+.menu_imag_up
+{
+	font-size: 10pt;
+	background-image: url(../Imagenes/fondo_menu2.gif);
+	width: 89px;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 35px;
+	text-align: center;
+}
+/* cursor de los calendarios */
+.hand
+{
+	cursor: hand;
+}
+
+
+	

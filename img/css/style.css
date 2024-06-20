@@ -1,0 +1,319 @@
+﻿a,
+a:hover {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+@font-face {
+  font-family: 'myriad-pro';
+  font-weight: bold;
+  src: url('../font/MyriadPro-Semibold.eot');
+  src: url('../font/MyriadPro-Semibold.woff') format('woff'), url('../font/MyriadPro-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-Regular.eot');
+  src: url('../font/SourceSansPro-Regular.otf.woff') format('woff'), url('../font/SourceSansPro-Regular.ttf.woff') format('truetype'), url('../font/SourceSansPro-Regular.svg') format('svg');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('../font/SourceSansPro-Bold.eot');
+  src: url('../font/SourceSansPro-Bold.otf.woff') format('woff'), url('../font/SourceSansPro-Bold.ttf.woff') format('truetype'), url('../font/SourceSansPro-Bold.svg') format('svg');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'source-code-pro';
+  src: url('../font/SourceCodePro-Regular.eot');
+  src: url('../font/SourceCodePro-Regular.otf.woff') format('woff'), url('../font/SourceCodePro-Regular.ttf.woff') format('truetype'), url('../font/SourceCodePro-Regular.svg') format('svg');
+}
+.doc-hor-line {
+  border-bottom: 1px solid #eee;
+  line-height: 0.1em;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+.doc-hor-line span {
+  background: #fff;
+  padding: 0 10px;
+}
+.doc-box-info {
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+.doc-box-warning {
+  border-left: 5px solid #c7254e;
+  padding-left: 10px;
+}
+.doc-body {
+  font-family: 'source-sans-pro', sans-serif;
+}
+.doc-body h1,
+.doc-body h2,
+.doc-body h3,
+.doc-body h4,
+.doc-body h5,
+.doc-body h6 {
+  font-family: 'myriad-pro', sans-serif;
+}
+.doc-container {
+  width: 100%;
+  height: 100%;
+}
+.doc-nav {
+  background: #191918;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  overflow: hidden;
+  min-height: 100%;
+}
+.doc-nav li.doc-nav-active {
+  background: #e3e3e3;
+}
+.doc-nav li.doc-nav-active a {
+  border-right: none;
+  color: #333;
+}
+.doc-nav li.doc-nav-active a:hover {
+  background: #d6d6d6;
+}
+.doc-nav li.doc-nav-active > a {
+  background: #FCFCFE;
+  border: none;
+  /*border-bottom: solid 1px #c9c9c9;
+        border-top: solid 1px #c9c9c9;*/
+
+  font-weight: bold;
+  position: relative;
+}
+.doc-nav li.doc-nav-active ul a {
+  padding: 5px 25px;
+}
+.doc-nav li a {
+  color: #b3b3b3;
+  display: block;
+  line-height: 18px;
+  padding: 5px 10px;
+  position: relative;
+}
+.doc-nav li a:hover {
+  background: #fcfcfc;
+}
+.doc-logo {
+  background: #2980b9;
+  color: #fff;
+  font-family: 'myriad-pro', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.doc-logo a {
+  color: #fff;
+}
+.doc-logo ul {
+  height: 90px;
+}
+.doc-logo li {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+}
+.doc-logo li i {
+  color: #ccc;
+  display: block;
+  padding-bottom: 10px;
+}
+.doc-logo li i:hover {
+  color: #fff;
+}
+.doc-logo li a,
+.doc-logo li a:hover {
+  background: none;
+}
+.doc-hire-me {
+  border-top: 1px solid #16a085;
+  color: #1abc9c;
+  margin: 30px 40px;
+  padding-top: 10px;
+  position: relative;
+}
+.doc-hire-me img {
+  border-radius: 25px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+.doc-hire-me ul {
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+.doc-hire-me a {
+  color: #ecf0f1;
+}
+.doc-hire-me li a,
+.doc-hire-me li a:hover {
+  background: none;
+}
+.doc-wrapper {
+  background: #f9f9f9;
+  margin-left: 300px;
+  min-height: 100%;
+}
+.doc-content {
+  background: #fff;
+  float: left;
+  height: 100%;
+  margin: 0;
+  max-width: 800px;
+  padding: 5px 30px;
+}
+.doc-content pre,
+.doc-content code {
+  background: #fff;
+  font-family: 'source-code-pro', sans-serif;
+}
+.doc-content pre {
+  overflow: auto;
+  padding: 0;
+  word-wrap: normal;
+}
+.doc-content pre code {
+  white-space: pre;
+}
+ul.doc-list li:before {
+  content: '\2014\a0';
+}
+.doc-heading {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 20px;
+}
+.doc-heading .doc-edit-button {
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.doc-example {
+  margin-bottom: 15px;
+}
+.doc-example .tab-pane {
+  padding: 10px 15px;
+}
+.doc-example .tab-content > .active {
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: none;
+}
+.doc-example pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.doc-example-note {
+  background: yellow;
+  padding: 2px;
+}
+/* Right sidebar */
+.doc-sidebar {
+  float: left;
+  max-width: 320px;
+  padding: 10px;
+  width: 320px;
+}
+.doc-sidebar-ad {
+  margin-top: 10px;
+}
+.doc-sidebar-twitter {
+  margin-bottom: 10px;
+}
+.doc-sidebar-twitter iframe {
+  width: 100%;
+}
+.doc-footer {
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+  padding: 15px 0;
+  text-align: center;
+}
+.doc-footer iframe {
+  border: 0;
+}
+.doc-footer li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.doc-features .row {
+  margin-bottom: 10px;
+}
+.doc-news {
+  padding-bottom: 20px;
+}
+.doc-news ul {
+  padding-left: 20px;
+}
+.doc-news .doc-news-added {
+  border-left: 4px solid #5cb85c;
+}
+.doc-news .doc-news-improved {
+  border-left: 4px solid #428bca;
+}
+.doc-news .doc-news-fixed {
+  border-left: 4px solid #d9534f;
+}
+.doc-news .btn {
+  margin-top: 20px;
+}
+.doc-contributors {
+  text-align: center;
+}
+.doc-contributors ul {
+  margin-bottom: 20px;
+}
+.doc-contributors li {
+  display: inline-block;
+  padding: 5px 5px 5px 0;
+}
+.doc-contributors li img {
+  border: 1px solid #eee;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+/* Post */
+.doc-post-title {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.doc-post-meta {
+  vertical-align: middle;
+}
+.doc-post-author img {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.doc-post-date {
+  margin-left: 15px;
+}
+.doc-post-category {
+  margin-left: 15px;
+}
+.doc-post-category a {
+  padding-right: 5px;
+}
+.doc-post-content ul.doc-post-list li:before {
+  content: '\2014\a0';
+}

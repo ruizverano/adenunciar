@@ -1,0 +1,26 @@
+/* Make it a marquee */
+.marquee {
+    width: 545px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    /*border: 1px green solid;*/
+}
+
+.marquee div 
+{
+    color: black; font-family: arial,helvetica; font-size: 12px; font-weight: bold;
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    /*border: 1px red solid;*/      
+}
+.marquee div:hover {
+    animation-play-state: paused
+}
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); transition-duration: 3s; }
+    100% { transform: translate(-100%, 0); transition-delay: 3s; }
+}

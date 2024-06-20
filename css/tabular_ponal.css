@@ -1,0 +1,101 @@
+        table 
+        {
+            background-color: rgb(255,255,255);
+        }
+        
+        .table-bordered {
+          border: 1px solid #bfbfbf;/*#676c53*/
+        }
+        
+        .table-bordered > thead > tr > th,
+        .table-bordered > tbody > tr > th,
+        .table-bordered > tfoot > tr > th,
+        .table-bordered > thead > tr > td,
+        .table-bordered > tbody > tr > td,
+        .table-bordered > tfoot > tr > td {
+          border: 1px solid #727272;
+        }
+        
+        .table-hover > tbody > tr:hover > td,
+        .table-hover > tbody > tr:hover > th  {
+          background-color: #c6e9af;
+        }
+        .well-custom 
+        {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            min-height: 20px;            
+            margin-bottom: 20px;
+            background-color: #f7f7f7;            
+            border: 1px solid #bfbfbf;
+            border-radius: 8px;
+            -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        }
+        
+        .well-custom-sm 
+        {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            min-height: 20px;
+            margin-bottom: 0px;
+            background-color: #f7f7f7;
+            border: 1px solid #bfbfbf;
+            border-radius: 3px;
+            -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        body, th, td, table
+        {            
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+        
+        .row-no-margin 
+        {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        .p-no-margin 
+        {
+            margin-bottom: 0px;
+        }
+        
+        @media (min-width: 992px) {
+          .modal-lg {
+            min-width: 700px;
+            min-height: 100px;
+          }
+          .modal-body-lg{
+            min-height: 100px;
+          }
+        }
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus {
+          color: #fff;
+          background-color: #017136;
+          border: 1px solid #dddddd;
+          border-bottom-color: transparent;
+          cursor: default;
+        }
+        .nav-tabs {
+          border-bottom: 1px solid #ffffff;
+        }
+        .page-header {
+          padding-bottom: 9px;
+          margin: auto 0 auto;
+          border-bottom: 1px solid #eeeeee;
+          font-weight: bold;
+        }
+
+	  
+	      
+
+

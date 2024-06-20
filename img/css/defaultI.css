@@ -1,0 +1,246 @@
+
+#page
+{
+	z-index: 1;
+	width: 1000px;
+	min-height: 258px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u364
+{
+	z-index: 7;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 73px;
+	left: 19px;
+	background: transparent url("../images/botones-exchange_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u342
+{
+	z-index: 5;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 73px;
+	left: 123px;
+	background: transparent url("../images/botones-jurid_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u397
+{
+	z-index: 9;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 73px;
+	left: 224px;
+	background: transparent url("../images/botones-educ_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u353
+{
+	z-index: 6;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 180px;
+	left: 19px;
+	background: transparent url("../images/botones-heroe_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u386
+{
+	z-index: 8;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 180px;
+	left: 123px;
+	background: transparent url("../images/botones-conv_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u331
+{
+	z-index: 4;
+	width: 103px;
+	height: 113px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 180px;
+	left: 224px;
+	background: transparent url("../images/botones-office365_0.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u75
+{
+	z-index: 2;
+	width: 1000px;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 4px;
+}
+
+
+#u331:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-office365.png") no-repeat left top;
+	background-size: contain;
+    margin-top: 180px;
+}
+
+#u331.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-office365.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u342:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-jurid.png") no-repeat left top;
+	background-size: contain;
+    margin-top:73px;
+}
+
+#u342.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-jurid.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u353:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-heroe.png") no-repeat left top;
+	background-size: contain;
+    margin-top: 180px;
+}
+
+#u353.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-heroe.png") no-repeat left top;
+	background-size: contain;
+}
+
+
+
+#u364:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-exchange.png") no-repeat left top;
+	background-size: contain;
+    margin-top:73px;
+}
+
+#u364.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-exchange.png") no-repeat left top;
+	background-size: contain;
+}
+
+
+#u386:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-capa%200.png") no-repeat left top;
+	background-size: contain;
+    margin-top: 180px;
+}
+
+#u386.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 199px -10000px 0px 0px;
+	background: transparent url("../images/botones-capa%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+
+
+#u397:hover
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-educ1.png") no-repeat left top;
+	background-size: contain;
+    margin-top:73px;
+}
+
+#u397.MuseLinkActive
+{
+	width: 103px;
+	height: 113px;
+	min-height: 0px;
+	margin: 89px -10000px 0px 0px;
+	background: transparent url("../images/botones-educ1.png") no-repeat left top;
+	background-size: contain;
+}
+
+body
+{
+	position: relative;
+	min-width: 1000px;
+	padding-top: 6px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

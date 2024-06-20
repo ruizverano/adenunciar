@@ -1,0 +1,320 @@
+﻿$(document).ready(function () {
+    $("#general, #pn_denuncia_linea, #pn_preguntas_extorision, #pn_denuncia").hide();
+
+    $("#denuncia").click(function () {
+        $("#tipoinformacion").hide();
+        $("#pn_denuncia_linea").fadeIn(2000);
+    });
+
+    $("#extorsion").click(function () {
+        $("#pn_denuncia_linea").hide();
+        $("#pn_preguntas_extorision").fadeIn(2000);
+    });
+   
+    $("#denuncia").click(function () {
+        $("#pn_denuncia_linea").hide();
+        $("#pn_denuncia").fadeIn(2000);
+    });
+
+    var prm = Sys.WebForms.PageRequestManager.getInstance();
+    var botonPresionado;
+    prm.add_beginRequest(function (sender, args) {
+        botonPresionado = args.get_postBackElement();
+        
+    });
+    prm.add_endRequest(function () {
+
+        $("#denuncia").click(function () {
+            $("#tipoinformacion").hide();
+            $("#pn_denuncia_linea").fadeIn(2000);
+        });
+
+    });
+});
+
+/*Funciones*/
+function mostrarmodalDireccion() {
+    $('#Direccion').modal('show')
+    $('#Direccion').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrar_registro() {
+    $('#modal_reg_empresas').modal('show')
+    $('#modal_reg_empresas').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrarmodalDireccion1() {
+    $('#Direccion1').modal('show')
+    $('#Direccion1').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrarmodalDireccion2() {
+    $('#Direccion2').modal('show')
+    $('#Direccion2').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrarmodalDireccion3() {
+    $('#Direccion3').modal('show')
+    $('#Direccion3').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrarmodalDireccion4() {
+    $('#Direccion4').modal('show')
+    $('#Direccion4').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function mostrarmodalDireccion5() {
+    $('#Direccion5').modal('show')
+    $('#Direccion5').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
+function btnGuardar(obj) {
+    $('#modalOcupado').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    $('#modalOcupado').modal('show');
+    return true;
+}
+function hover(element) {
+    if (element.id == "denuncia") {
+        element.setAttribute('src', 'img/botones%20psc-denuncia.png');
+    }
+    else if (element.id == "antecedentes") {
+        element.setAttribute('src', 'img/botones%20psc-antec.png');
+    }
+    else if (element.id == "pqrs") {
+        element.setAttribute('src', 'img/botones%20psc-pqrs.png');
+    }
+    else if (element.id == "cnp") {
+        element.setAttribute('src', 'img/botones%20psc-cnp.png');
+    }
+    else if (element.id == "empresas") {
+        element.setAttribute('src', 'img/empresas.png');
+    }
+    else if (element.id == "documento_extraviado") {
+        element.setAttribute('src', 'img/botones%20psc-doc.png');
+    }
+    else if (element.id == "hurto") {
+        element.setAttribute('src', 'img/hurto_0.png');
+    }
+    else if (element.id == "hurto_comercio") {
+        element.setAttribute('src', 'img/botones-hurto-comercio.png');
+    }
+    else if (element.id == "hurto_personas") {
+        element.setAttribute('src', 'img/botones-hurto-personas.png');
+    }
+    else if (element.id == "hurto_residencia") {
+        element.setAttribute('src', 'img/botones-hurto-residencias.png');
+    }
+    else if (element.id == "hurto_abigeato") {
+        element.setAttribute('src', 'img/ganado_0.png');
+    }
+    else if (element.id == "hurto_finca") {
+        element.setAttribute('src', 'img/finca_0.png');
+    }
+    else if (element.id == "hurto_celular") {
+        element.setAttribute('src', 'img/botones%20psc-celular.png');
+    }
+    else if (element.id == "hurto_financiera") {
+        element.setAttribute('src', 'img/banco_0.png');
+    }
+    else if (element.id == "hurto_autoparte") {
+        element.setAttribute('src', 'img/autopartes_0.png');
+    }
+    else if (element.id == "hurto_bicicleta") {
+        element.setAttribute('src', 'img/bicicletas_0.png');
+    }
+    else if (element.id == "hurto_vehiculo") {
+        element.setAttribute('src', 'img/vehiculos_0.png');
+    }
+    else if (element.id == "hurto_motocicleta") {
+        element.setAttribute('src', 'img/motos_0.png');
+    }
+    else if (element.id == "delitos_informatico") {
+        element.setAttribute('src', 'img/botones-delito-informarico1.png');
+    }
+    else if (element.id == "pornografia_infantil") {
+        element.setAttribute('src', 'img/botones-pornografia-infantil.png');
+    }
+    else if (element.id == "extorsi") {
+        element.setAttribute('src', 'img/extorsion.png');
+    }
+    else if (element.id == "salas") {
+        element.setAttribute('src', 'img/salas.png');
+    }
+    else if (element.id == "falsedad") {
+        element.setAttribute('src', 'img/botones-falsdoc1.png');
+    }
+    else if (element.id == "alimentos") {
+        element.setAttribute('src', 'img/aliment1.png');
+    }
+    else if (element.id == "corrupcion") {
+        element.setAttribute('src', 'img/corrupcion1.png');
+    }
+    else if (element.id == "estafa") {
+        element.setAttribute('src', 'img/estafa1.png');
+    }
+    else if (element.id == "violenciagenero") {
+        element.setAttribute('src', 'img/violencia_genero1.png');
+    }
+    else if (element.id == "maltratoanimal") {
+        element.setAttribute('src', 'img/maltrato_animal1.png');
+    }
+
+}
+
+function unhover(element) {
+    if (element.id == "denuncia") {
+        element.setAttribute('src', 'img/botones%20psc-denuncia1.png');
+    }
+    else if (element.id == "antecedentes") {
+        element.setAttribute('src', 'img/botones%20psc-antec1.png');
+    }
+    else if (element.id == "pqrs") {
+        element.setAttribute('src', 'img/botones%20psc-pqrs1.png');
+    }
+    else if (element.id == "cnp") {
+        element.setAttribute('src', 'img/botones%20psc-cnp1.png');
+    }
+    else if (element.id == "empresas") {
+        element.setAttribute('src', 'img/empresas1.png');
+    }
+    else if (element.id == "documento_extraviado") {
+        element.setAttribute('src', 'img/botones%20psc-doc1.png');
+    }
+    else if (element.id == "hurto") {
+        element.setAttribute('src', 'img/hurto_1.png');
+    }
+    else if (element.id == "hurto_comercio") {
+        element.setAttribute('src', 'img/botones-hurto-comercio1.png');
+    }
+    else if (element.id == "hurto_personas") {
+        element.setAttribute('src', 'img/botones-hurto-personas1.png');
+    }
+    else if (element.id == "hurto_residencia") {
+        element.setAttribute('src', 'img/botones-hurto-residencias1.png');
+    }
+    else if (element.id == "hurto_abigeato") {
+        element.setAttribute('src', 'img/ganado_1.png');
+    }
+    else if (element.id == "hurto_finca") {
+        element.setAttribute('src', 'img/finca_1.png');
+    }
+    else if (element.id == "hurto_celular") {
+        element.setAttribute('src', 'img/botones%20psc-celular1.png');
+    }
+    else if (element.id == "hurto_financiera") {
+        element.setAttribute('src', 'img/banco_1.png');
+    }
+    else if (element.id == "hurto_autoparte") {
+        element.setAttribute('src', 'img/autopartes_1.png');
+    }
+    else if (element.id == "hurto_bicicleta") {
+        element.setAttribute('src', 'img/bicicletas_1.png');
+    }
+    else if (element.id == "hurto_vehiculo") {
+        element.setAttribute('src', 'img/vehiculos_1.png');
+    }
+    else if (element.id == "hurto_motocicleta") {
+        element.setAttribute('src', 'img/motos_1.png');
+    }
+    else if (element.id == "delitos_informatico") {
+        element.setAttribute('src', 'img/botones-delito-informarico.png');
+    }
+    else if (element.id == "pornografia_infantil") {
+        element.setAttribute('src', 'img/botones-pornografia-infantil1.png');
+    }
+    else if (element.id == "extorsi") {
+        element.setAttribute('src', 'img/extorsion_1.png');
+    }
+    else if (element.id == "salas") {
+        element.setAttribute('src', 'img/salas_1.png');
+    }
+    else if (element.id == "falsedad") {
+        element.setAttribute('src', 'img/botones-falsdoc0.png');
+    }
+    else if (element.id == "alimentos") {
+        element.setAttribute('src', 'img/aliment0.png');
+    }
+    else if (element.id == "corrupcion") {
+        element.setAttribute('src', 'img/corrupcion0.png');
+    }
+    else if (element.id == "estafa") {
+        element.setAttribute('src', 'img/estafa0.png');
+    }
+    else if (element.id == "violenciagenero") {
+        element.setAttribute('src', 'img/violencia_genero.png');
+    }
+    else if (element.id == "maltratoanimal") {
+        element.setAttribute('src', 'img/maltrato_animal0.png');
+    }
+
+    maltrato_animal0.png
+
+}
+function cargar_grilla() {
+    $.metadata.setType("class");
+    $("table.grid").each(function () {
+        var jTbl = $(this);
+
+        if (jTbl.find("tbody>tr>th").length > 0) {
+            jTbl.find("tbody").before("<thead><tr></tr></thead>");
+            jTbl.find("thead:first tr").append(jTbl.find("th"));
+            jTbl.find("tbody tr:first").remove();
+        }
+
+        // If GridView has the 'sortable' class and has more than 10 rows
+        if (jTbl.hasClass("sortable") && jTbl.find("tbody:first > tr").length > 10) {          
+            jTbl.dataTable({
+                sPaginationType: "full_numbers",
+                sDom: '<"top"lf>rt<"bottom"ip>',
+                oLanguage: {
+                    sInfoFiltered: "(from _MAX_ entries)",
+                    sSearch: ""
+                },
+                aoColumnDefs: [
+                    { bSortable: false, aTargets: jTbl.metadata().disableSortCols }
+                ]
+            });
+        }
+    });
+}
+function mostrarBarra() {
+    $('#divBarraEnviando').show();
+    return true;
+}
+window.onblur = function () {
+    $('#divBarraEnviando').hide();
+}
+function mostrarmodal() {
+    $('#modalNotificaciones').modal('show');
+}
+
+function mostrarmodalVictima() {
+    $('#modal_victima').modal('show');
+}
+function panelDenuncia() {
+   
+    $("#pn_denuncia_linea").fadeIn();
+    $("#pn_preguntas_extorision").hide();
+    $("#pn_denuncia").hide();
+}
+function choose() {
+    $('.chosen-select').chosen();
+    $('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+}

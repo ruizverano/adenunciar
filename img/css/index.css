@@ -1,0 +1,276 @@
+.version.index /* version checker */
+{
+	color: #00000E;
+	background-color: #62990C;
+}
+
+.html
+{
+	background: #FFFFFF url("../images/ne/bg.jpg") repeat left top scroll;
+}
+
+#page
+{
+	z-index: 1;
+	width: 1000px;
+	min-height: 647px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u75
+{
+	z-index: 2;
+	width: 254px;
+	height: 273px;
+	-webkit-transform: matrix(0.788,0.6157,-0.6157,0.788,111,-49);
+	-ms-transform: matrix(0.788,0.6157,-0.6157,0.788,111,-49);
+	transform: matrix(0.788,0.6157,-0.6157,0.788,111,-49);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -23px;
+	left: 455px;
+	background: transparent url("../images/ne/humana-humana%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u75:hover
+{
+	width: 254px;
+	height: 273px;
+	min-height: 0px;
+	margin: -23px -10000px 0px 0px;
+	background: transparent url("../images/ne/humana-humana.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u75.MuseLinkActive
+{
+	width: 254px;
+	height: 273px;
+	min-height: 0px;
+	margin: -23px -10000px 0px 0px;
+	background: transparent url("../images/ne/humana-humana.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u87
+{
+	z-index: 3;
+	width: 330px;
+	-pie-box-shadow: 6px 6px 8px #999999;
+	box-shadow: 6px 6px 8px rgba(0,0,0,0.4);
+	background-color: #006837;
+	padding-bottom: 10px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 59px;
+}
+
+#u88-4
+{
+	z-index: 4;
+	width: 257px;
+	min-height: 23px;
+	background-color: transparent;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 12px;
+	left: 41px;
+}
+
+#u89
+{
+	z-index: 8;
+	width: 277px;
+	height: 186px;
+	-webkit-transform: matrix(0.9659,0.2588,-0.2588,0.9659,29,-33);
+	-ms-transform: matrix(0.9659,0.2588,-0.2588,0.9659,29,-33);
+	transform: matrix(0.9659,0.2588,-0.2588,0.9659,29,-33);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 138px;
+	left: 706px;
+	background: transparent url("../images/ne/integra-integra%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u89:hover
+{
+	width: 277px;
+	height: 186px;
+	min-height: 0px;
+	margin: 138px -10000px 0px 0px;
+	background: transparent url("../images/ne/integra-integra.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u89.MuseLinkActive
+{
+	width: 277px;
+	height: 186px;
+	min-height: 0px;
+	margin: 159px -10000px 0px 0px;
+	background: transparent url("../images/ne/integra-integra.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u101
+{
+	z-index: 9;
+	width: 318px;
+	height: 206px;
+	-webkit-transform: matrix(0.9998,0.0175,-0.0175,0.9998,2,-3);
+	-ms-transform: matrix(0.9998,0.0175,-0.0175,0.9998,2,-3);
+	transform: matrix(0.9998,0.0175,-0.0175,0.9998,2,-3);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 265px;
+	left: 720px;
+	background: transparent url("../images/ne/efectiva-efectiva%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u101:hover
+{
+	width: 318px;
+	height: 206px;
+	min-height: 0px;
+	margin: 265px -10000px 0px 0px;
+	background: transparent url("../images/ne/efectiva-efectiva.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u101.MuseLinkActive
+{
+	width: 318px;
+	height: 206px;
+	min-height: 0px;
+	margin: 322px -10000px 0px 0px;
+	background: transparent url("../images/ne/efectiva-efectiva.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u113
+{
+	z-index: 10;
+	width: 367px;
+	height: 234px;
+	-webkit-transform: matrix(0.9272,-0.3746,0.3746,0.9272,-30,77);
+	-ms-transform: matrix(0.9272,-0.3746,0.3746,0.9272,-30,77);
+	transform: matrix(0.9272,-0.3746,0.3746,0.9272,-30,77);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 245px;
+	left: 423px;
+	background: transparent url("../images/ne/innovadora-innovadora%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u113:hover
+{
+	width: 367px;
+	height: 234px;
+	min-height: 0px;
+	margin: 245px -10000px 0px 0px;
+	background: transparent url("../images/ne/innovadora-innovadora.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u113.MuseLinkActive
+{
+	width: 367px;
+	height: 234px;
+	min-height: 0px;
+	margin: 384px -10000px 0px 0px;
+	background: transparent url("../images/ne/innovadora-innovadora.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u125
+{
+	z-index: 11;
+	width: 315px;
+	height: 328px;
+	-webkit-transform: matrix(0.829,0.5592,-0.5592,0.829,119,-60);
+	-ms-transform: matrix(0.829,0.5592,-0.5592,0.829,119,-60);
+	transform: matrix(0.829,0.5592,-0.5592,0.829,119,-60);
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 179px;
+	left: 206px;
+	background: transparent url("../images/ne/disciplinada-disciplina%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u125:hover
+{
+	width: 315px;
+	height: 328px;
+	min-height: 0px;
+	margin: 179px -10000px 0px 0px;
+	background: transparent url("../images/ne/disciplinada-disciplina.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u125.MuseLinkActive
+{
+	width: 315px;
+	height: 328px;
+	min-height: 0px;
+	margin: 175px -10000px 0px 0px;
+	background: transparent url("../images/ne/disciplinada-disciplina.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u137
+{
+	z-index: 12;
+	width: 373px;
+	height: 153px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 470px;
+	left: 623px;
+	background: transparent url("../images/ne/heroe-heroismo%200.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u137:hover
+{
+	width: 373px;
+	height: 153px;
+	min-height: 0px;
+	margin: 470px -10000px 0px 0px;
+	background: transparent url("../images/ne/heroe-heroismo.png") no-repeat left top;
+	background-size: contain;
+}
+
+#u137.MuseLinkActive
+{
+	width: 373px;
+	height: 153px;
+	min-height: 0px;
+	margin: 528px -10000px 0px 0px;
+	background: transparent url("../images/ne/heroe-heroismo.png") no-repeat left top;
+	background-size: contain;
+}
+
+body
+{
+	position: relative;
+	min-width: 1000px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+
