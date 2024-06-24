@@ -1,0 +1,249 @@
+<form name="FRA" method="POST" action="noticiacriminalservlet">
+
+<input type="hidden" name="accion" value="crearRelacionImplicadosConImplicados">
+<input type="hidden" name="vipeId" value="">
+<input type="hidden" name="modulo" value="">
+
+<table id="relacionPersonas" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+  	<td height="30" class="encabezaColumna" width="25%">Interviniente A</td>
+	<td height="30" class="encabezaColumna" width="25%">Interviniente B</td>
+	<td height="30" class="encabezaColumna" width="20%">Tipo Relación</td>
+	<td height="30" class="encabezaColumna" width="20%">Relación</td>
+	<td height="30" class="encabezaColumna" width="10%">Opciones</td>
+	    
+  </tr>
+  
+   	  <tr><td colspan="4" class="renglonImparLetraEnRojo">No hay ninguna relación de intervinientes creada.</td></tr>
+   
+ <tr>
+    <td height="38">
+       <input type="button" class="boton" value="Crear relación" onclick="activarCampos()">
+    </td>
+  </tr>
+</tbody></table>
+<table id="datosFormVinculo" border="0" cellpadding="0" cellspacing="0" width="100%" hidden="true" style="display: table;">
+  <tbody><tr>
+    <td class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td colspan="3" class="subTitulos"><span class="titulos">Relacionar Intervinientes entre Si</span> </td>
+    </tr>
+  <tr>
+    <td width="19%" class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td width="1%" class="datoFormulario">&nbsp;</td>
+    <td width="80%" class="datoFormulario">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="">
+
+
+
+
+<table width="100%">
+  <tbody><tr>
+    <td width="19%" class="txtosFormularioNoticiaCriminal"><span class="asteriscoNoticiaCriminal">*</span>&nbsp;Interviniente</td>
+    <td width="1%" class="datoFormulario">&nbsp;</td>
+    <td width="80%" class="datoFormulario">
+      <select name="persId" class="datoFormulario" onchange="">
+	    <option value="-1">---Seleccione un valor de la lista---</option>
+
+
+		
+        <option value="58515703|802798698"> JULIAN BUENAVENTURA | INDICIADO </option>
+
+
+		
+        <option value="58480439|802773505"> YOBANY YANDE | INDICIADO </option>
+
+
+		
+        <option value="58479500|802772928"> JHON RUIZ | INDICIADO </option>
+
+
+		
+        <option value="58477498|802771369"> CESAR GARCIA | INDICIADO </option>
+
+
+		
+        <option value="58464152|802762004"> JOHAN BENAVIDES | INDICIADO </option>
+
+
+		
+        <option value="58310309|802646631"> CRISTIAN MENESES | INDICIADO </option>
+
+
+		
+        <option value="58310024|802646301"> ALEXANDER REYES | INDICIADO </option>
+
+
+		
+        <option value="58309908|802646338"> OCTAVIO VELAZCO | INDICIADO </option>
+
+
+		
+        <option value="53569376|799062642"> CARLOS NIETO | INDICIADO </option>
+
+
+		
+        <option value="53569377|799062643"> EN AVERIGUACION EN AVERIGUACION | VICTIMA </option>
+
+   	  </select>
+    </td>
+  </tr>
+ <!--   <tr>
+  	<td colspan="3">
+		<table width="100%" id ="personasRelacionadas" name="personasRelacionadas">
+			<thead>
+	    		<tr>
+	    				<td height="30" class="encabezaColumna" width="30%">Interviniente A</td>
+	    				<td height="30" class="encabezaColumna" width="30%">Interviniente B</td>
+	    				<td height="30" class="encabezaColumna" width="20%">Relación</td>
+	    				<td height="30" class="encabezaColumna" width="10%">Relación</td>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+				<tr>
+				</tr>
+			</tbody>	
+    	</table>
+    </td>
+  </tr>-->
+</tbody></table></td>
+    </tr>
+  <tr>
+    <td class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="">
+<table border="0" width="100%">
+  <tbody><tr>
+    <td width="19%" class="txtosFormularioNoticiaCriminal"><span class="asteriscoNoticiaCriminal">*</span>&nbsp;Interviniente B</td>
+    <td width="1%" class="datoFormulario">&nbsp;</td>
+    <td width="80%" class="datoFormulario">
+      <select name="persIdB" class="datoFormulario">
+ 	    <option>---Seleccione un valor de la lista---</option>
+
+	     <option value="58515703|802798698">  JULIAN BUENAVENTURA | INDICIADO </option>
+
+
+	     <option value="58480439|802773505">  YOBANY YANDE | INDICIADO </option>
+
+
+	     <option value="58479500|802772928">  JHON RUIZ | INDICIADO </option>
+
+
+	     <option value="58477498|802771369">  CESAR GARCIA | INDICIADO </option>
+
+
+	     <option value="58464152|802762004">  JOHAN BENAVIDES | INDICIADO </option>
+
+
+	     <option value="58310309|802646631">  CRISTIAN MENESES | INDICIADO </option>
+
+
+	     <option value="58310024|802646301">  ALEXANDER REYES | INDICIADO </option>
+
+
+	     <option value="58309908|802646338">  OCTAVIO VELAZCO | INDICIADO </option>
+
+
+	     <option value="53569376|799062642">  CARLOS NIETO | INDICIADO </option>
+
+
+	     <option value="53569377|799062643">  EN AVERIGUACION EN AVERIGUACION | VICTIMA </option>
+
+
+
+
+
+
+
+      	</select>
+        </td>
+    </tr>
+
+</tbody></table>
+</td>
+    </tr>
+      <tr>
+    <td class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="txtosFormularioNoticiaCriminal"><span class="asteriscoNoticiaCriminal">*</span>&nbsp;Tipo Relacion entre Intervinientes</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">
+      <select name="tipoTiViId" class="datoFormulario" onchange="selectChange(this,document.FRA.tiViId,maestroAgrupaTipoVinculaciones,1,'UD_relacion',false,true,'','--Seleccione un valor de la lista--');">
+  <option>---Seleccione un valor de la lista---</option>
+                      
+ 
+ 
+ 
+ 	<!-- LISTA:GrupoTipoVinculacion -->
+
+	<option value="1823" title="RELACIÓN SENTIMENTAL O ÍNTIMA">RELACIÓN SENTIMENTAL O ÍNTIMA</option>
+	<option value="1824" title="RELACIÓN FAMILIAR">RELACIÓN FAMILIAR</option>
+	<option value="1825" title="RELACIÓN DE CUIDADO, PROTECCIÓN O PRESTACIÓN DE SERVICIOS">RELACIÓN DE CUIDADO, PROTECCIÓN O PRESTACIÓN DE SERVICIOS</option>
+	<option value="1826" title="RELACIÓN LABORAL">RELACIÓN LABORAL</option>
+	<option value="1827" title="OTRA RELACIÓN">OTRA RELACIÓN</option>
+	<option value="1828" title="RELACIÓN EDUCATIVA">RELACIÓN EDUCATIVA</option>
+	<option value="1829" title="NO REPORTA RELACIÓN">NO REPORTA RELACIÓN</option>
+
+ 
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td class="txtosFormularioNoticiaCriminal">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="txtosFormularioNoticiaCriminal"><span class="asteriscoNoticiaCriminal">*</span>&nbsp;Relacion entre Intervinientes</td>
+    <td class="datoFormulario">&nbsp;</td>
+    <td class="datoFormulario">
+      <select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="29" title="ABUELO(A)">ABUELO(A)</option><option value="45" title="CUÑADO(A)">CUÑADO(A)</option><option value="4" title="HERMANO(A)">HERMANO(A)</option><option value="35" title="HIJASTRO(A)">HIJASTRO(A)</option><option value="42" title="HIJO(A)">HIJO(A)</option><option value="31" title="MADRASTRA">MADRASTRA</option><option value="19" title="MADRE">MADRE</option><option value="44" title="MEDIO HERMANO (A)">MEDIO HERMANO (A)</option><option value="34" title="NIETO (A)">NIETO (A)</option><option value="37" title="NUERA">NUERA</option><option value="114" title="OTRO FAMILIAR">OTRO FAMILIAR</option><option value="30" title="PADRASTRO">PADRASTRO</option><option value="5" title="PADRE">PADRE</option><option value="28" title="PRIMO(A)">PRIMO(A)</option><option value="33" title="SOBRINO(A)">SOBRINO(A)</option><option value="126" title="SUEGRO(A)">SUEGRO(A)</option><option value="27" title="TÍO(A)">TÍO(A)</option><option value="36" title="YERNO">YERNO</option></select>
+ 
+      
+    </td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="38">
+       <input type="button" class="boton" value="Aceptar" onclick="enviarFormaRelIntervinientes()">
+     
+    </td>
+  </tr>
+</tbody></table>
+</form>
+
+
+<select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="41" title="COMPAÑERO (A) PERMANENTE">COMPAÑERO (A) PERMANENTE</option><option value="32" title="CONYUGUE">CONYUGUE</option><option value="49" title="EX COMPAÑERO (A) PERMANENTE">EX COMPAÑERO (A) PERMANENTE</option><option value="43" title="EX CONYUGUE">EX CONYUGUE</option><option value="82" title="EX NOVIO (A)">EX NOVIO (A)</option><option value="38" title="NOVIO (A)">NOVIO (A)</option><option value="204" title="RELACIÓN EXTARMATRIMONIAL">RELACIÓN EXTARMATRIMONIAL</option></select>
+
+<select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="127" title="VIGILANTE">VIGILANTE</option></select>
+
+<select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="127" title="VIGILANTE">VIGILANTE</option></select>
+
+<select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="3" title="AMIGO (A)">AMIGO (A)</option><option value="101" title="ARRENDADOR(A)">ARRENDADOR(A)</option><option value="102" title="ARRENDATARIO(A)">ARRENDATARIO(A)</option><option value="86" title="VECINO(A)">VECINO(A)</option></select>
+
+<select name="tiViId" id="tiViId" class="datoFormulario"><option value="" title="--Seleccione un valor de la lista--">--Seleccione un valor de la lista--</option><option value="85" title="PROFESOR(A)">PROFESOR(A)</option></select>
+
+
+
+

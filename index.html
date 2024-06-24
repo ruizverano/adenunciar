@@ -1,7 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0057)./forms/default.aspx -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
-	DENUNCIA VIRTUAL - POLICÍA NACIONAL DE COLOMBIA
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>
+	A DENUNCIAR PLUS +
 </title><link rel="icon" type="image/gif" href="./forms/img/ofite.gif"><link href="./index_files/bootstrap.min.css" rel="stylesheet" type="text/css">            
     <link href="./index_files/simple-line-icons.min.css" "="" rel="stylesheet" type="text/css">
     <script src="./index_files/jquery.js.descarga" type="text/javascript"></script>
@@ -9,14 +11,12 @@
     <script src="./index_files/main.js.descarga" type="text/javascript"></script> 
     <link href="./index_files/main.css" rel="stylesheet" type="text/css">
     <link href="./index_files/main(1).css" rel="stylesheet" type="text/css">
+<!--mapa-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="js/mapa.js" defer></script>
+<!--fin mapa-->
     <script type="text/javascript">
-
-    
-
-
-
-
-
 
         function panelvisible() {
             $("#botones_hurto").slideDown();
@@ -47,7 +47,7 @@
     
 <body>
     <div id="wrap"> 
-    <form name="aspnetForm" method="post" action="./forms/default.aspx" id="aspnetForm">
+    <!-- <form name="aspnetForm" method="post" action="./forms/default.aspx" id="aspnetForm"> -->
 <div>
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
@@ -90,10 +90,10 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
        <div class="jumbotron" style="background-color: #0C2900; background-image: url(img/cinta_verde_azulado.png);">
             <div class="container-fluid">
                 <div class="col-xs-12 col-md-11" id="titulo1">                     
-                        <p><img alt="PONAL" src="./index_files/policia.png">&nbsp;Policía Nacional - Fiscalía General de la Nación</p>                  
+                        <p><img alt="PONAL" src="./index_files/policia.png">&nbsp;Policía Nacional - Escuela General Francisco de Paula Santander</p>                  
                 </div>
                 <div class="col-md-1 text-center" id="titulo2">                      
-                        <a href="./forms/Login.aspx"><span class="navbar-link link-menu icon-home"></span></a>&nbsp;&nbsp;<a href="./forms/default.aspx#"><span class="navbar-link link-buscar icon-magnifier"></span></a>                      
+                        <!-- <a href="./forms/Login.aspx"><span class="navbar-link link-menu icon-home"></span></a>&nbsp;&nbsp;<a href="./forms/default.aspx#"><span class="navbar-link link-buscar icon-magnifier"></span></a>                       -->
                 </div>
             </div>   
         </div>
@@ -101,7 +101,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
             <div class="container-fluid">
                 <div class="row">                         
                     <div class="col-xs-12 text-right">
-                        <a href="./forms/Login.aspx"><span class="navbar-link link-menu icon-home"></span></a>&nbsp;&nbsp;<a href="./forms/default.aspx#"><span class="navbar-link link-buscar icon-magnifier"></span></a>
+                        <!-- <a href="./forms/Login.aspx"><span class="navbar-link link-menu icon-home"></span></a>&nbsp;&nbsp;<a href="./forms/default.aspx#"><span class="navbar-link link-buscar icon-magnifier"></span></a> -->
                     </div>
                 </div>
             </div>   
@@ -110,7 +110,7 @@ if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side frame
           <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <p style=" font-weight:bold">Sistema Nacional de Denuncia Virtual ... ¡ADenunciar!</p>
+                    <p style=" font-weight:bold">Sistema Nacional de Denuncia Virtual versión mejorada... ¡ADenunciar Plus! +!</p>
                 </div>                         
             </div>
           </div>   
@@ -123,8 +123,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
 //]]>
 </script>
 
-
-    
     <div class="modal fade" id="modalNotificaciones">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -146,6 +144,21 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
     </div>
     
     <div id="tipoinformacion">
+
+        <button id="start-btn">Iniciar Reconocimiento de Voz</button>
+        <button id="stop-btn">Detener Reconocimiento de Voz</button>
+
+        <div id="map"></div>
+        
+        <br>
+        <label for="latitude">Latitud:</label>
+        <input type="text" id="latitude" name="latitude" readonly>
+        <br><br>
+        <label for="longitude">Longitud:</label>
+        <input type="text" id="longitude" name="longitude" readonly>
+        <br><br>
+
+
         <div class="container">
              <div class="row">
                 <div class="col-xs-12 col-md-4">
@@ -844,9 +857,48 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                 
                   
 
-</form>
+<!-- </form> -->
          </div><!-- Wrap Div end --> 
+<!--     
+         <script>
+            function initMap() {
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                });
     
+                const marker = new google.maps.Marker({
+                    position: { lat: -34.397, lng: 150.644 },
+                    map: map,
+                    draggable: true
+                });
     
+                google.maps.event.addListener(map, 'click', function(event) {
+                    marker.setPosition(event.latLng);
+                    document.getElementById('latitude').value = event.latLng.lat();
+                    document.getElementById('longitude').value = event.latLng.lng();
+                    speak("Ubicación seleccionada.");
+                });
+    
+                google.maps.event.addListener(marker, 'dragend', function(event) {
+                    document.getElementById('latitude').value = event.latLng.lat();
+                    document.getElementById('longitude').value = event.latLng.lng();
+                    speak("Ubicación actualizada.");
+                });
+            }
+    
+            // Ejecuta la función de bienvenida cuando la página esté completamente cargada
+            document.addEventListener('DOMContentLoaded', () => {
+                welcomeUser();
+            });
+        </script> -->
 
-</body></html>
+</body>
+
+<footer>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script> -->
+
+    <script src="js/general.js"></script>
+</footer>
+
+</html>
