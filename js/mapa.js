@@ -1,7 +1,5 @@
-
-
-    const latitudeInput = document.getElementById('latitude');
-    const longitudeInput = document.getElementById('longitude');
+const latitudeInput = document.getElementById('latitude');
+const longitudeInput = document.getElementById('longitude');
 
 // Inicializa el mapa usando Leaflet
 function initMap() {

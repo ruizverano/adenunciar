@@ -281,24 +281,26 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModalHurtop">
+    <div class="modal fade" id="myModalHurtop">    
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close"></button>
                     <h4 class="modal-title text-center">ANTES DE CONTINUAR  TENGA PRESENTE</h4>
                 </div>
+                <button onclick="hablar();">hablar</button>
+                <script>  hablar()</script>
                 <div class="modal-body text-justify">
                     <div class="row" style="padding-right: 20px;">
                         <div class="col-md-12" style="">
                             <ul style="text-align: justify;">
                                 
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24 horas, para determinar si los hechos relatados corresponden a un delito. Si ncesita atención inmediata para la creación de su denuncia, se recomienda acercarse personalmente a uno de los puntos de recepción de denuncias de la Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
-                                <li>Si ha sido víctima de estafa o abuso de confianza, acérquese al punto de recepción de denuncias más cercano de Policía Nacional o Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a personas. El hurto a personas se refiere al apoderamiento de cosas o bienes que pertenecen a una persona.</li>
+                                <li id="liModalHurtoPersonas1"></li>
+                                <li id="liModalHurtoPersonas2"></li>
+                                <li id="liModalHurtoPersonas3"></li>
+                                <li id="liModalHurtoPersonas4"></li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_personas.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -330,7 +332,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>Si ha sido víctima de estafa o abuso de confianza, acérquese al punto de recepción de denuncias más cercano de Policía Nacional o Fiscalía General de la Nación.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a residencia. El hurto a residencia se refiere al apoderamiento de cosas o bienes, que pertenecen a una o varias personas que se encuentran al interior de una casa, apartamento, finca, etc.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_residencias.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -360,7 +362,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El HURTO A CABEZAS DE GANADO O ABIGEATO consiste en apoderarse de ganado mayor (bovino, mular o equino) o ganado menor (porcino, caprino u ovino), sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_ganado.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -390,7 +392,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a fincas. El HURTO A FINCAS consiste en apoderarese de los bienes y elementos que se encuentran al interior de un inmueble ubicado en el área urbana o rural, destinado al cultivo de productos agrícolas, a la crianza y producción de ganado mayor y menor (bovino, molar, equino, porcino, caprino, ovino, bípedos), a la producción de piscicultura, entre otros; sin el consentimeinto del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_fincas.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -421,7 +423,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto de celulares. El HURTO A CELULARES consiste en apoderarse de teléfonos móviles inteligentes y/o celulares, sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio. </li>
                                 <li>El HURTO A CELULARES se presenta si  la persona que robó el elemento tenía la intención de hurtar de manera específica el celular. Si el hurto se dio además sobre otros elementos (cartera, billetera, maletín, dinero, joyas, etc.), se trata de HURTO A PERSONAS</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_celular.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -451,7 +453,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a entidades financieras. El HURTO A ENTIDADES FINANCIERAS consiste en apoderarse del dinero que se encuentra bajo la custodia de entidades financieras y/o bancarias (bancos, cooperativas, fiducias, fondos, cajeros electrónicos, vehículos de valores, entre otros), sacándolo de los lugares destinados para su administración y/o manejo, con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_entidadesfinancieras.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -481,7 +483,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a autopartes. El HURTO A AUTOPARTES consiste en apoderarse de las partes esenciales (chasis, motor, ruedas, espejos, partes del motor o computador de vehículo motorizado) de medios motorizados destinados al transporte de personas, animales o cosas; sin el consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio. </li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_autopartes.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -511,7 +513,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto de bicicletas. El HURTO DE BICICLETAS consiste en apoderarse de una bicicleta sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_bicicletas.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -541,7 +543,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto a vehículo. El HURTO DE VEHÍCULOS consiste en apoderarse, en su totalidad, de un vehículo motorizado de cuatro llantas o más, que transporta personas, animales o cosas, sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_vehiculo.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -571,7 +573,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero, carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su propietario, para obtener provecho. Si los elementos fueron entregados por el propietario de manera voluntaria mediante artificios o engaños, el delito no es hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra persona con la intención de que posteriormente fuera devuelto, y esta persona se apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.</li>
                                 <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto de motocicleta. El HURTO DE MOTOCICLETAS consiste en apoderarse de una motocicleta sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_hurto_motocicletas.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -599,7 +601,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 Los delitos informáticos son conductas en que el o los delincuentes se valen de programas informáticos para cometer delitos como implantación de virus, suplantación de sitios web, estafas, violación de derechos de autor, piratería, etc. 
                             </p>
                             <p>
-                                <a href="./forms/frm_terminos_delitos_informaticos.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a>
+                                <a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a>
                             </p>
                         </div>
                     </div>
@@ -730,7 +732,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
 
                                 <li>Si el delito que usted quiere poner en conocimiento no se encuentra descrito en los anteriores tipos penales, acérquese al punto de recepción de denuncias más cercano. </li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_falsedad.aspx?v_hurto=hp" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
 
@@ -763,7 +765,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                  <li>En el delito de estafa la víctima NO es intimidada ni obligada sino llevada a cometer un error por medio del engaño. Si la persona SÍ es obligada o intimidada puede tratarse de Extorsión o Constreñimiento ilegal, según cada caso. </li>
 
                             </ul>
-                            <p><a href="./forms/frm_terminos_estafa.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
 
@@ -801,7 +803,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                                 <li>Psicológica: el maltrato verbal es una forma de violencia psicológica, ya que si se presenta como un hecho repetitivo y deliberado, puede llevar a la anulación de la personalidad de la víctima, a su sufrimiento psicológico y desvaloración. La determinación de la violencia psicológica le corresponde a psicólogos o psiquiatras forenses.</li>
                                 <li>Sexual: cualquier acto o intento de violencia física, psíquica o moral en la que se presentan conductas sexuales de manera impuesta y obligada. Estas conductas atentan contra el normal desarrollo de la sexualidad o vulneran las condiciones sexuales plenas de salud y bienestar de las víctimas. Puede ocurrir como ejercicio de poder y humillación tanto en contra de mujeres, al someterlas a una condición de inferioridad por considerarlas objeto de uso y abuso; como en contra de hombres, sustentándose en prejuicios de virilidad, fuerza y control. Así mismo, puede afectar a personas de cualquier edad o condición.</li>
                             </ul>
-                            <p><a href="./forms/frm_terminos_violenciagenero.aspx" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
+                            <p><a href="./forms/FormularioHurtoComercio.html" style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
                         </div>
                     </div>
                 </div>
@@ -853,52 +855,12 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
         </div>
     </div>
 
- 
-                
-                  
-
-<!-- </form> -->
-         </div><!-- Wrap Div end --> 
-<!--     
-         <script>
-            function initMap() {
-                const map = new google.maps.Map(document.getElementById('map'), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 8
-                });
-    
-                const marker = new google.maps.Marker({
-                    position: { lat: -34.397, lng: 150.644 },
-                    map: map,
-                    draggable: true
-                });
-    
-                google.maps.event.addListener(map, 'click', function(event) {
-                    marker.setPosition(event.latLng);
-                    document.getElementById('latitude').value = event.latLng.lat();
-                    document.getElementById('longitude').value = event.latLng.lng();
-                    speak("Ubicación seleccionada.");
-                });
-    
-                google.maps.event.addListener(marker, 'dragend', function(event) {
-                    document.getElementById('latitude').value = event.latLng.lat();
-                    document.getElementById('longitude').value = event.latLng.lng();
-                    speak("Ubicación actualizada.");
-                });
-            }
-    
-            // Ejecuta la función de bienvenida cuando la página esté completamente cargada
-            document.addEventListener('DOMContentLoaded', () => {
-                welcomeUser();
-            });
-        </script> -->
-
 </body>
 
-<footer>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script> -->
-
-    <script src="js/general.js"></script>
+<footer> 
+    <script src="js/textos.js" ></script>
+    <script src="js/sintetizador.js"></script>
+    <script src="js/transcriptor.js"></script>
 </footer>
 
 </html>
