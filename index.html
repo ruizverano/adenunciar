@@ -11,6 +11,7 @@
     <script src="./index_files/main.js.descarga" type="text/javascript"></script> 
     <link href="./index_files/main.css" rel="stylesheet" type="text/css">
     <link href="./index_files/main(1).css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!--mapa-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
@@ -18,16 +19,21 @@
 <!--fin mapa-->
     <script type="text/javascript">
 
-        function panelvisible() {
+        function panelHurto() {
             $("#botones_hurto").slideDown();
-            $("#botones_otro").slideUp();
-            $("#botones_otro1").slideUp();
-    }
+            speak("Está ingresando a la opción hurto!.");
+            //$("#botones_otro").slideUp();
+            //$("#botones_otro1").slideUp();
+        }
         function regresar() {
             $("#botones_hurto").slideUp();
-            $("#botones_otro").slideDown();
-            $("#botones_otro1").slideDown();
-    }
+            speak("Está regresando a la opción anterior!.");
+            //$("#botones_otro").slideDown();
+            //$("#botones_otro1").slideDown();
+        }
+        function panelHurtoPersonas(){
+            $("#myModalHurtop").slideDown();
+        }
     </script>
 
 
@@ -145,8 +151,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
     
     <div id="tipoinformacion">
 
-        <button id="start-btn">Iniciar Reconocimiento de Voz</button>
-        <button id="stop-btn">Detener Reconocimiento de Voz</button>
+        
+
+        <button id="start-btn"><i class="fa-solid fa-microphone"></i></i></button>
+        <button id="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>
 
         <div id="map"></div>
         
@@ -240,7 +248,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                 </div>
                   
                 <div class="col-xs-12 col-md-4">
-                     <img id="hurto" src="./index_files/hurto_1.png" class="img-responsive" onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;" alt="Denuncia en linea hurto" onclick="panelvisible();">
+                     <img id="hurto" src="./index_files/hurto_1.png" class="img-responsive" onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;" alt="Denuncia en linea hurto" onclick="panelHurto();">
                 </div>
             </div>
         </div>
@@ -288,8 +296,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                     <button type="button" class="close"></button>
                     <h4 class="modal-title text-center">ANTES DE CONTINUAR  TENGA PRESENTE</h4>
                 </div>
-                <button onclick="hablar();">hablar</button>
-                <script>  hablar()</script>
+                
                 <div class="modal-body text-justify">
                     <div class="row" style="padding-right: 20px;">
                         <div class="col-md-12" style="">
@@ -306,8 +313,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
                 </div>
                 <div class="modal-footer">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            
+                        <div class="col-md-12 text-center">                            
                             <button onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;" type="button" class="btn btn-success">Continuar</button>
                         </div>
                     </div>

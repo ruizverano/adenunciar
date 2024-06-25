@@ -7,9 +7,9 @@ if ('webkitSpeechRecognition' in window) {
     const startBtn = document.getElementById('start-btn');
     const stopBtn = document.getElementById('stop-btn');    
 
-    const resultElement ="";
-    // const resultElement = document.getElementById('result');
-    // const voiceInput = document.getElementById('voice-input');
+    //const resultElement ="";
+     const resultElement = document.getElementById('result');
+     const voiceInput = document.getElementById('voice-input');
     // const nameInput = document.getElementById('name');
     // const emailInput = document.getElementById('email');
     // const complaintInput = document.getElementById('complaint');
@@ -17,38 +17,19 @@ if ('webkitSpeechRecognition' in window) {
 
     // Diccionario de comandos
 
-    const bienvenida = () => {
-        recognition.stop();
-        speak("Hola! Bienvenidos a denunciár plús.");        
-    }
+    // const bienvenida = () => {
+    //     recognition.stop();
+    //     speak("Hola! Bienvenidos a denunciár plús.");        
+    // }
 
     //bienvenida();
 
-    document.addEventListener('DOMContentLoaded', () => {
-        //recognition.start();
-        initMap();
-        bienvenida;
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     //recognition.start();
+    //     initMap();
+    //     bienvenida;
 
-    });
-
-    const commands = {
-        "hola": () => {            
-            bienvenida();
-        },
-
-        "hurto": () => {
-            panelHurto();            
-        },
-
-        "a personas": () => {
-            panelHurtoPersonas();
-            speak("Está ingresando a la opción hurto a personas!.");
-        },
-
-        "regresar": () => {
-            regresar();            
-        }
-    };
+    // });
 
     // Función para limpiar el formulario
     // function clearForm() {
@@ -76,15 +57,9 @@ if ('webkitSpeechRecognition' in window) {
          console.log(finalTranscript);
          console.log(interimTranscript);
 
-        //  resultElement.innerHTML = `<strong>Resultado final:</strong> ${finalTranscript}<br><strong>Intermedio:</strong> ${interimTranscript}`;
-        //  voiceInput.value = finalTranscript || interimTranscript;
-       
-         for (const command in commands) {
-             if (finalTranscript.includes(command)) {
-                 commands[command]();
-                 break;
-             }
-         }
+          resultElement.innerHTML = `<strong>Resultado final:</strong> ${finalTranscript}<br><strong>Intermedio:</strong> ${interimTranscript}`;
+          voiceInput.value = finalTranscript || interimTranscript;
+       document.getElementById('ctl00_ContentPlaceHolder3_TextRelatoDenuncia').innerText= interimTranscript;
      };
 
 
