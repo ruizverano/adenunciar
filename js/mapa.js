@@ -1,8 +1,13 @@
 const latitudeInput = document.getElementById('latitude');
 const longitudeInput = document.getElementById('longitude');
 
+document.addEventListener('DOMContentLoaded', () => {
+    //welcomeUser();
+    initMap();
+});
 // Inicializa el mapa usando Leaflet
 function initMap() {
+    
     console.log("se ha iniciado el mapa");
     const map = L.map('map').setView([-34.397, 150.644], 8);
 

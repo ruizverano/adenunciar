@@ -61,6 +61,13 @@ function mostrarmodalDireccion2() {
         keyboard: false
     });
 }
+function mostrarmodalCoordenadas() {
+    $('#Direccion2').modal('show')
+    $('#Direccion2').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+}
 function mostrarmodalDireccion3() {
     $('#Direccion3').modal('show')
     $('#Direccion3').modal({

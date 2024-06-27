@@ -44,7 +44,15 @@
 	<link href="./datosGeneralesHechos9_files/bootstrap2-toggle.min.css" rel="stylesheet">
 	<link href="./datosGeneralesHechos9_files/ValidationEngine.css" rel="stylesheet">
 
-
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="../js/mapa.js" defer></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 
 	<style type="text/css">
 		.hideGridColumn {
@@ -1490,14 +1498,14 @@
 		}
 	</style>
 
-<style>
-	#map {
-		height: 400px;
-		width: 100%;
-	}
-</style>
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
@@ -1752,9 +1760,8 @@
 													id="ctl00_ContentPlaceHolder3_RddlPaisH"
 													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
 												<select name="ctl00$ContentPlaceHolder3$ddlPaisH"
-													
-													id="ctl00_ContentPlaceHolder3_ddlPaisH" 
-													tabindex="-1" class="chosen-select" style="display: none;">
+													id="ctl00_ContentPlaceHolder3_ddlPaisH" tabindex="-1"
+													class="chosen-select" style="display: none;">
 													<option value="0">Digite y seleccione...</option>
 													<option value="9832">AFGANISTAN</option>
 													<option value="9808">ALBANIA</option>
@@ -2030,7 +2037,6 @@
 													style="color:Red;visibility:hidden;">*</span>
 
 												<select name="ctl00$ContentPlaceHolder3$ddlDtoH"
-													
 													id="ctl00_ContentPlaceHolder3_ddlDtoH" tabindex="-1"
 													class="chosen-select" style="display: none;">
 													<option selected="selected" value="0">Digite y seleccione...
@@ -2087,7 +2093,6 @@
 													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
 
 												<select name="ctl00$ContentPlaceHolder3$ddlMunH"
-													
 													id="ctl00_ContentPlaceHolder3_ddlMunH" tabindex="-1"
 													class="chosen-select" style="display: none;">
 
@@ -3203,7 +3208,7 @@
 													<option value="9718"> LA PRIMAVERA</option>
 													<option value="9711"> PUERTO CARREÑO (CT)</option>
 													<option value="9723"> SANTA ROSALÍA</option>
-	
+
 												</select>
 												<div class="chosen-container chosen-container-single chosen-container-single-nosearch"
 													style="width: 100%;" title=""
@@ -3219,9 +3224,11 @@
 										<div class="col-md-3">
 											<div class="form-group">
 												<label class="etiqueta">Barrio</label>
-												<span id="ctl00_ContentPlaceHolder3_RddlBarrioH" style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
-												<input type="text" name="barrio" id="barrio" class="form-control" placeholder="Ingrese el barrio">
-											
+												<span id="ctl00_ContentPlaceHolder3_RddlBarrioH"
+													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
+												<input type="text" name="barrio" id="barrio" class="form-control"
+													placeholder="Ingrese el barrio">
+
 												<div class="chosen-container chosen-container-single chosen-container-single-nosearch"
 													style="width: 100%;" title=""
 													id="ctl00_ContentPlaceHolder3_ddlBarrioH_chosen">
@@ -3240,7 +3247,8 @@
 												<label class="etiqueta">
 													Dirección
 													<button type="button" class="btn btn-direccion" data-toggle="modal"
-														data-target="#Direccion2"></button>
+														data-target="#Direccion2">
+													</button>
 												</label>
 												<span id="ctl00_ContentPlaceHolder3_vtxtDirecciónH"
 													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
@@ -3250,6 +3258,50 @@
 													placeholder="Dirección Hechos" style="text-transform: uppercase;">
 											</div>
 										</div>
+
+										<div class="col-md-3">
+											<div class="form-group">
+												<label class="etiqueta">
+													Coordenadas
+													<button type="button" class="btn btn-direccion" data-toggle="modal"
+														data-target="#Coordenadas">
+													</button>
+												</label>
+												<span id="ctl00_ContentPlaceHolder3_vtxtCoordenadas"
+													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
+												<input 
+													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
+													type="text"
+													id="ctl00_ContentPlaceHolder3_txtCoordenadas" 
+													tabindex="86"
+													onfocus="mostrarmodalCoordenadas();" 
+													class="form-control"
+													placeholder="Latitud" 
+													style="text-transform: uppercase;"
+												/>
+												<input 
+													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
+													type="text"
+													id="ctl00_ContentPlaceHolder3_txtCoordenadas" 
+													tabindex="86"
+													onfocus="mostrarmodalCoordenadas();" 
+													class="form-control"
+													placeholder="Longitud" 
+													style="text-transform: uppercase;"
+												/>
+											</div>
+										</div>
+
+										<script>
+											function mostrarmodalCoordenadas() {
+											$('#Coordenadas').modal('show')
+											$('#Coordenadas').modal({
+												backdrop: 'static',
+												keyboard: false
+											});
+											}
+										</script>
+
 										<div class="col-md-3">
 											<div class="form-group">
 												<label class="etiqueta">Clase de sitio</label><span
@@ -3840,12 +3892,16 @@
 												<h4><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Relato de
 													los hechos</h4>
 											</div>
-											        <!--BOTONES PARA COMANDOS DE VOZ-->
+											<!--BOTONES PARA COMANDOS DE VOZ-->
 
-													<button title="Iniciar transcripción por voz" type="button" id="start-btn-relato"><i class="fa-solid fa-microphone"></i></i></button>
-													<button title="Detener transcripción por voz" type="button" id="stop-btn-relato"><i class="fa-solid fa-microphone-slash"></i></button>
-													<!--------------------------------->
-													<p id="result"></p>
+											<button title="Iniciar transcripción por voz" type="button"
+												id="start-btn-relato"><i
+													class="fa-solid fa-microphone"></i></i></button>
+											<button title="Detener transcripción por voz" type="button"
+												id="stop-btn-relato"><i
+													class="fa-solid fa-microphone-slash"></i></button>
+											<!--------------------------------->
+											<p id="result"></p>
 											<div class="panel-body">
 												<div id="ctl00_ContentPlaceHolder3_UpdatePanel4">
 
@@ -3862,15 +3918,15 @@
 																	class="etiqueta" style="border: hidden">
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextRelatoDenuncia"
-																	rows="2" cols="20"
-																	id="txtRelatoDenuncia"
+																	rows="2" cols="20" id="txtRelatoDenuncia"
 																	tabindex="83" class="form-control"
 																	placeholder="Recuerde que este campo es obligatorio y tiene un maximo de 3900 caracteres"
 																	onkeydown="kotoba()" onkeyup="kotoba()"
-																	style="height:100px;"
-																	>
+																	style="height:100px;">
 																</textarea>
-																<button title="Leer mi relato" type="button" onClick='speak($("#txtRelatoDenuncia").val())'><i class="fa-sharp fa-solid fa-volume-high"></i></button>
+																<button title="Leer mi relato" type="button"
+																	onClick='speak($("#txtRelatoDenuncia").val())'><i
+																		class="fa-sharp fa-solid fa-volume-high"></i></button>
 															</div>
 														</div>
 													</div>
@@ -4752,10 +4808,8 @@
 
 
 				</div>
+
 				<div class="modal fade" id="Direccion2" tabindex="-1">
-
-
-
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="body">
@@ -4978,6 +5032,65 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="modal fade" id="Coordenadas" tabindex="-1">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="body">
+								<div class="row">
+									<div class="col-md-3">
+									</div>
+									<div class="col-md-6">
+										<div class="alert alert-info">
+											<h3 class="modal-title text-center" id="Coordenadas_">Coordenadas
+											</h3>
+										</div>
+									</div>
+									<div class="col-md-3">
+									</div>
+								</div>
+							</div>
+							<div class="modal-body">
+<div id="map"></div>
+								<div class="row">
+									
+								</div>
+								
+								<div class="row">
+									<div class="col-md-3">
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input name="ctl00$ContentPlaceHolder3$txtDireccion_2" type="text"
+												readonly="readonly" id="ctl00_ContentPlaceHolder3_txtDireccion_2"
+												tabindex="715" autocomplete="off" onchange="mostrarmodalDireccion2();"
+												class="form-control" placeholder="Direccion Ingresada"
+												style="text-transform: uppercase;">
+										</div>
+									</div>
+									<div class="col-md-3">
+									</div>
+								</div>
+								<div class="row">
+									<div class="modal-footer">
+										<div class="col-md-5">
+										</div>
+										<div class="col-md-2">
+
+											<a id="ctl00_ContentPlaceHolder3_Btndireccion" class="btn btn-success"
+												data-dismiss="modal"
+												href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder3$Btndireccion&#39;,&#39;&#39;)"><span
+													class="btn-label"></span>Aceptar</a>
+										</div>
+										<div class="col-md-4">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<div id="ctl00_ContentPlaceHolder3_Upmodalvehiculos" style="display: block">
 
@@ -5081,7 +5194,6 @@
 											<div class="form-group">
 												<label class="etiqueta" id="p2_hau1">Marca: </label>
 												<select name="ctl00$ContentPlaceHolder3$r2_hau1"
-													
 													id="ctl00_ContentPlaceHolder3_r2_hau1" class="chosen-select"
 													style="display: none;">
 													<option selected="selected" value="0">Digite y seleccione...
@@ -8391,7 +8503,8 @@
 										cualquier novedad o situación que afecte el proceso penal o situación de riesgo
 										a su &nbsp;&nbsp;&nbsp;&nbsp;integridad con ocasión de la denuncia o querella.
 										<p></p>7. Manifestar, si le consta, que los mismos hechos ya han sido puestos en
-										conocimiento de otro funcionario.</div>
+										conocimiento de otro funcionario.
+									</div>
 									<p></p>
 								</div>
 								<div class="modal-header" style="padding: 0px; padding-left: 5px;">
