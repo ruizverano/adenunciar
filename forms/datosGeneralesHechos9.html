@@ -3842,8 +3842,8 @@
 											</div>
 											        <!--BOTONES PARA COMANDOS DE VOZ-->
 
-													<button id="start-btn"><i class="fa-solid fa-microphone"></i></i></button>
-													<button id="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>
+													<button title="Iniciar transcripción por voz" type="button" id="start-btn-relato"><i class="fa-solid fa-microphone"></i></i></button>
+													<button title="Detener transcripción por voz" type="button" id="stop-btn-relato"><i class="fa-solid fa-microphone-slash"></i></button>
 													<!--------------------------------->
 													<p id="result"></p>
 											<div class="panel-body">
@@ -3869,8 +3869,8 @@
 																	onkeydown="kotoba()" onkeyup="kotoba()"
 																	style="height:100px;"
 																	>
-																	
 																</textarea>
+																<button title="Leer mi relato" type="button" onClick='speak($("#txtRelatoDenuncia").val())'><i class="fa-sharp fa-solid fa-volume-high"></i></button>
 															</div>
 														</div>
 													</div>
@@ -8845,5 +8845,6 @@
 	</div>
 </body>
 <script src="../js/transcriptorRelato.js"></script>
+<script src="../js/sintetizador.js"></script>
 
 </html>
