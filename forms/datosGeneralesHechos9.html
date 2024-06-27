@@ -298,15 +298,15 @@
 			}
 		}
 		function kotoba() {
-			if ($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val().length == 3900) {
+			if ($("#txtRelatoDenuncia").val().length == 3900) {
 				sweetAlert("Señor ciudadano", "Ocupó la totalidad en caracteres, continue en el segundo recuadro.");
 				return false;
 			}
-			if ($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val().length >= 3800) {
-				$("#ctl00_ContentPlaceHolder3_result").val($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val().length + " le restan 100 caracteres").css({ "color": "red" });
+			if ($("#txtRelatoDenuncia").val().length >= 3800) {
+				$("#ctl00_ContentPlaceHolder3_result").val($("#txtRelatoDenuncia").val().length + " le restan 100 caracteres").css({ "color": "red" });
 			}
 			else {
-				$("#ctl00_ContentPlaceHolder3_result").val($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val().length + "  Caracteres").css({ "color": "green" });
+				$("#ctl00_ContentPlaceHolder3_result").val($("#txtRelatoDenuncia").val().length + "  Caracteres").css({ "color": "green" });
 				$("#ctl00_ContentPlaceHolder3_result").addClass('mui--is-not-empty');
 			}
 
@@ -871,11 +871,11 @@
 				sweetAlert("Señor ciudadano,", "por favor indique la zona de los hechos.");
 				return false;
 			}
-			if ($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val() == "") {
+			if ($("#txtRelatoDenuncia").val() == "") {
 				sweetAlert("Señor ciudadano,", "por favor escriba la descripción en el campo -Descripción detallada de los hechos que va a denunciar.");
 				return false;
 			}
-			if ($("#ctl00_ContentPlaceHolder3_TextRelatoDenuncia").val().length <= 300) {
+			if ($("#txtRelatoDenuncia").val().length <= 300) {
 				sweetAlert("Señor ciudadano,", "en el campo -Realice una descripción detallada de los hechos que va a denunciar- debe escribir mínimo 300 caracteres.");
 				return false;
 			}
@@ -1489,8 +1489,6 @@
 			margin: 0 auto;
 		}
 	</style>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap" async defer></script>
 
 <style>
 	#map {
@@ -3865,11 +3863,14 @@
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextRelatoDenuncia"
 																	rows="2" cols="20"
-																	id="ctl00_ContentPlaceHolder3_TextRelatoDenuncia"
+																	id="txtRelatoDenuncia"
 																	tabindex="83" class="form-control"
 																	placeholder="Recuerde que este campo es obligatorio y tiene un maximo de 3900 caracteres"
 																	onkeydown="kotoba()" onkeyup="kotoba()"
-																	style="height:100px;"></textarea>
+																	style="height:100px;"
+																	>
+																	
+																</textarea>
 															</div>
 														</div>
 													</div>
@@ -8606,7 +8607,7 @@
 					Array.remove(Page_Validators, document.getElementById('ctl00_ContentPlaceHolder3_VddlZona'));
 				}
 				Sys.Application.add_init(function () {
-					$create(Sys.Extended.UI.FilteredTextBoxBehavior, { "filterType": 15, "id": "ctl00_ContentPlaceHolder3_FilteredTextBoxExtender7", "validChars": " ,-" }, null, null, $get("ctl00_ContentPlaceHolder3_TextRelatoDenuncia"));
+					$create(Sys.Extended.UI.FilteredTextBoxBehavior, { "filterType": 15, "id": "ctl00_ContentPlaceHolder3_FilteredTextBoxExtender7", "validChars": " ,-" }, null, null, $get("txtRelatoDenuncia"));
 				});
 
 				document.getElementById('ctl00_ContentPlaceHolder3_RddlArmahurto').dispose = function () {

@@ -70,9 +70,9 @@ if ('webkitSpeechRecognition' in window) {
     // }
 
       // Maneja los resultados del reconocimiento de voz
+      let finalTranscript = '';
      recognition.onresult = (event) => {
-         let interimTranscript = '';
-         let finalTranscript = '';
+         let interimTranscript = '';         
 
          for (let i = event.resultIndex; i < event.results.length; ++i) {
              if (event.results[i].isFinal) {
