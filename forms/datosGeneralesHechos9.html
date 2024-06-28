@@ -44,17 +44,9 @@
 	<link href="./datosGeneralesHechos9_files/bootstrap2-toggle.min.css" rel="stylesheet">
 	<link href="./datosGeneralesHechos9_files/ValidationEngine.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
-    <script src="../js/mapa.js" defer></script>
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
-
-	<style type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+   	<style type="text/css">
 		.hideGridColumn {
 			display: none;
 		}
@@ -1498,15 +1490,17 @@
 		}
 	</style>
 
-	<style>
-		#map {
-			height: 400px;
-			width: 100%;
-		}
-	</style>
+	
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="./script.js" defer></script>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body oncontextmenu="return false" class="" style="">
@@ -3272,7 +3266,7 @@
 												<input 
 													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
 													type="text"
-													id="ctl00_ContentPlaceHolder3_txtCoordenadas" 
+													id="latitud_txtCoordenadas" 
 													tabindex="86"
 													onfocus="mostrarmodalCoordenadas();" 
 													class="form-control"
@@ -3282,7 +3276,7 @@
 												<input 
 													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
 													type="text"
-													id="ctl00_ContentPlaceHolder3_txtCoordenadas" 
+													id="longitud_txtCoordenadas" 
 													tabindex="86"
 													onfocus="mostrarmodalCoordenadas();" 
 													class="form-control"
@@ -3291,16 +3285,6 @@
 												/>
 											</div>
 										</div>
-
-										<script>
-											function mostrarmodalCoordenadas() {
-											$('#Coordenadas').modal('show')
-											$('#Coordenadas').modal({
-												backdrop: 'static',
-												keyboard: false
-											});
-											}
-										</script>
 
 										<div class="col-md-3">
 											<div class="form-group">
@@ -3869,6 +3853,7 @@
 													<option value="R">RURAL</option>
 
 												</select>
+												
 												<div class="chosen-container chosen-container-single"
 													style="width: 100%;" title=""
 													id="ctl00_ContentPlaceHolder3_ddlZona_chosen">
@@ -5032,6 +5017,7 @@
 						</div>
 					</div>
 				</div>
+				
 
 				<div class="modal fade" id="Coordenadas" tabindex="-1">
 					<div class="modal-dialog modal-lg">
@@ -5051,9 +5037,9 @@
 								</div>
 							</div>
 							<div class="modal-body">
-<div id="map"></div>
-								<div class="row">
 									
+								<div class="row">
+									<div id="map"></div>						
 								</div>
 								
 								<div class="row">
@@ -5061,11 +5047,7 @@
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<input name="ctl00$ContentPlaceHolder3$txtDireccion_2" type="text"
-												readonly="readonly" id="ctl00_ContentPlaceHolder3_txtDireccion_2"
-												tabindex="715" autocomplete="off" onchange="mostrarmodalDireccion2();"
-												class="form-control" placeholder="Direccion Ingresada"
-												style="text-transform: uppercase;">
+											<p>Latitud: <span id="latitud"></span></p><p>Longitud: <span id="longitud"></span></p>
 										</div>
 									</div>
 									<div class="col-md-3">
