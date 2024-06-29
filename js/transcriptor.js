@@ -26,9 +26,7 @@ if ('webkitSpeechRecognition' in window) {
 
     document.addEventListener('DOMContentLoaded', () => {
         //recognition.start();
-        initMap();
         bienvenida;
-
     });
 
     const commands = {

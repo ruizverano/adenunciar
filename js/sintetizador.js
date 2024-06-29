@@ -8,6 +8,21 @@
         document.getElementById('liModalHurtoPersonas4').innerHTML= `${txtModalHurtoPersonas4}<button onClick='speak("${txtModalHurtoPersonas4}")'><i class="fa-sharp fa-solid fa-volume-high"></i></button>`;        
  }
 
+    function panelHurto() {
+        $("#botones_hurto").slideDown();
+        speak("Está ingresando a la opción hurto!.");
+    }
+    
+    function regresar() {
+        $("#botones_hurto").slideUp();
+        speak("Está regresando a la opción anterior!.");
+    }
+
+    function panelHurtoPersonas(){
+        $("#myModalHurtop").slideDown();
+    }
+
+
 function speak(text) {
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);

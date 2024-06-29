@@ -1,0 +1,44 @@
+#start-btn, #stop-btn, #start-btn-relato,#stop-btn-relato  {
+    font-size: 24px; /* Aumenta el tamaño del icono */
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Color del icono */
+    border: none;
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+#stop-btn, #stop-btn-relato {
+    background-color: #f44336; /* Fondo rojo */
+}
+
+#start-btn:hover, #stop-btn:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón (hover) */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+#stop-btn:hover {
+    background-color: #e53935; /* Cambio de color al pasar el ratón (hover) */
+}
+
+#read-btn {
+    font-size: 24px; /* Aumenta el tamaño del icono */
+    background-color: #007BFF; /* Fondo azul */
+    color: white; /* Color del icono */
+    border: none;
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Espaciado externo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+#read-btn:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón (hover) */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+

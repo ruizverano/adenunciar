@@ -12,31 +12,8 @@
     <link href="./index_files/main.css" rel="stylesheet" type="text/css">
     <link href="./index_files/main(1).css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<!--mapa-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
-    <script src="js/mapa.js" defer></script>
-<!--fin mapa-->
-    <script type="text/javascript">
-
-        function panelHurto() {
-            $("#botones_hurto").slideDown();
-            speak("Está ingresando a la opción hurto!.");
-            //$("#botones_otro").slideUp();
-            //$("#botones_otro1").slideUp();
-        }
-        function regresar() {
-            $("#botones_hurto").slideUp();
-            speak("Está regresando a la opción anterior!.");
-            //$("#botones_otro").slideDown();
-            //$("#botones_otro1").slideDown();
-        }
-        function panelHurtoPersonas(){
-            $("#myModalHurtop").slideDown();
-        }
-    </script>
-
-
+    
+    <link rel="stylesheet" href="./css/funcionalidadesPlus.css">
 
      <style type="text/css">        
 
@@ -153,20 +130,10 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitSc
 
         <!--BOTONES PARA COMANDOS DE VOZ-->
 
-        <button id="start-btn"><i class="fa-solid fa-microphone"></i></i></button>
-        <button id="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>
+        <button id="start-btn"><i class="fa-solid fa-microphone"></i></button>
+        <button id="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>        
 
-        <!--------------------------------->
-        <div id="map"></div>
-        
-        <br>
-        <label for="latitude">Latitud:</label>
-        <input type="text" id="latitude" name="latitude" readonly>
-        <br><br>
-        <label for="longitude">Longitud:</label>
-        <input type="text" id="longitude" name="longitude" readonly>
-        <br><br>
-
+        <!--------------------------------->        
 
         <div class="container">
              <div class="row">
