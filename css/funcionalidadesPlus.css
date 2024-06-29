@@ -42,3 +42,28 @@
     transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
 
+/* Ocultar el banner superior de Google Translate */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+  body {
+    top: 0px !important;
+  }    
+  /* Estilo para el selector de idioma */
+  #google_translate_element {
+    margin-top: 20px;
+    text-align: right;
+  }
+  .goog-te-gadget-simple {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .goog-te-gadget-simple:hover {
+    background-color: #e1e1e1;
+  }
+  .goog-te-gadget-simple .goog-te-menu-value span {
+    color: #333;
+  }
