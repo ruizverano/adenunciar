@@ -2,20 +2,10 @@ if ('webkitSpeechRecognition' in window) {
     const recognition = new webkitSpeechRecognition();
     recognition.continuous = true; 
     recognition.interimResults = true; 
-    recognition.lang = 'es-ES'; 
+    recognition.lang = 'es-ES';
 
     const startBtn = document.getElementById('start-btn');
     const stopBtn = document.getElementById('stop-btn');    
-
-    const resultElement ="";
-    // const resultElement = document.getElementById('result');
-    // const voiceInput = document.getElementById('voice-input');
-    // const nameInput = document.getElementById('name');
-    // const emailInput = document.getElementById('email');
-    // const complaintInput = document.getElementById('complaint');
-    // const submitBtn = document.getElementById('submit-btn');
-
-    // Diccionario de comandos
 
     const bienvenida = () => {
         recognition.stop();
@@ -23,7 +13,6 @@ if ('webkitSpeechRecognition' in window) {
     }
 
     //bienvenida();
-
     document.addEventListener('DOMContentLoaded', () => {
         //recognition.start();
         bienvenida;
@@ -48,17 +37,6 @@ if ('webkitSpeechRecognition' in window) {
         }
     };
 
-    // Función para limpiar el formulario
-    // function clearForm() {
-    //     nameInput.value = '';
-    //     emailInput.value = '';
-    //     complaintInput.value = '';
-    //     voiceInput.value = '';
-    //     resultElement.innerHTML = '';
-    //     console.log('Formulario limpiado');
-    // }
-
-      // Maneja los resultados del reconocimiento de voz
      recognition.onresult = (event) => {
          let interimTranscript = '';
          let finalTranscript = '';
@@ -73,9 +51,6 @@ if ('webkitSpeechRecognition' in window) {
 
          console.log(finalTranscript);
          console.log(interimTranscript);
-
-        //  resultElement.innerHTML = `<strong>Resultado final:</strong> ${finalTranscript}<br><strong>Intermedio:</strong> ${interimTranscript}`;
-        //  voiceInput.value = finalTranscript || interimTranscript;
        
          for (const command in commands) {
              if (finalTranscript.includes(command)) {
@@ -106,10 +81,6 @@ if ('webkitSpeechRecognition' in window) {
         recognition.stop();
     });
 
-    // Maneja el envío del formulario al hacer clic en el botón
-    // submitBtn.addEventListener('click', () => {
-    //     submitForm();
-    // });
 } else {
     alert('Tu navegador no soporta la API de Web Speech');
 }
