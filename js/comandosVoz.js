@@ -4,8 +4,8 @@ if ('webkitSpeechRecognition' in window) {
     recognition.interimResults = true; 
     recognition.lang = 'es-ES';
 
-    const startBtn = document.getElementById('start-btn');
-    const stopBtn = document.getElementById('stop-btn');    
+    const startBtn = document.getElementById('start-btn-comandos');
+    const stopBtn = document.getElementById('stop-btn-comandos');    
 
     const bienvenida = () => {
         recognition.stop();

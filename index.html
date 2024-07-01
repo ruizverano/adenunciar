@@ -156,8 +156,13 @@
 
                 <!--BOTONES PARA COMANDOS DE VOZ-->
 
-                <button id="start-btn"><i class="fa-solid fa-microphone"></i></button>
-                <button id="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>
+                <button class="start-btn" type="button" id="start-btn-comandos">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                
+                <button class="stop-btn" type="button" id="stop-btn-comandos">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                </button>
 
                 <!--------------------------------->
         </nav>
@@ -173,33 +178,33 @@
 
                 </div>
             </div>
-            <div class="table-container">
+            <div class="table-container" id="menu-principal">
                 <div class="row" style="display:none;" id="botones_hurto">
                     <table class="table">
                         <tr>
                             <td>
-                                <img id="hurto_comercio" data-toggle="modal" data-target="#myModalHurtoC"
+                                <img id="hurto_comercio" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/comercio1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a comercio">
                                 <span class="button">HURTO A COMERCIO</span>
                             </td>
                             <td>
-                                <img id="hurto_personas" data-toggle="modal" data-target="#myModalHurtop"
+                                <img id="hurto_personas" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/personas1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a personas">
                                 <span class="button">HURTO A PERSONAS</span>
                             </td>
                             <td>
-                                <img id="hurto_residencia" data-toggle="modal" data-target="#myModalHurtor"
+                                <img id="hurto_residencia" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/residencias1.png" class="img-responsive"
                                     onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a residencias">
                                 <span class="button">HURTO A RESIDENCIA</span>
                             </td>
                             <td>
-                                <img id="hurto_abigeato" data-toggle="modal" data-target="#myModalHurtoAB"
+                                <img id="hurto_abigeato" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/ganado_1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a comercio">
@@ -209,28 +214,28 @@
                         <tr>
 
                             <td>
-                                <img id="hurto_finca" data-toggle="modal" data-target="#myModalHurtoFinca"
+                                <img id="hurto_finca" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/finca_1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a personas">
                                 <span class="button">HURTO A FINCAS</span>
                             </td>
                             <td>
-                                <img id="hurto_celular" data-toggle="modal" data-target="#myModalHurtoCel"
+                                <img id="hurto_celular" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/botones psc-celular1.png" class="img-responsive"
                                     onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a residencias">
                                 <span class="button">HURTO A CELULARES</span>
                             </td>
                             <td>
-                                <img id="hurto_financiera" data-toggle="modal" data-target="#myModalHurtoFin"
+                                <img id="hurto_financiera" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/banco_1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a comercio">
                                 <span class="button">HURTO A ENTIDAD FINANCIERA</span>
                             </td>
                             <td>
-                                <img id="hurto_autoparte" data-toggle="modal" data-target="#myModalHurtoAupa"
+                                <img id="hurto_autoparte" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/autopartes_1.png" class="img-responsive"
                                     onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a personas">
@@ -240,21 +245,21 @@
                         <tr>
 
                             <td>
-                                <img id="hurto_bicicleta" data-toggle="modal" data-target="#myModalHurtoBi"
+                                <img id="hurto_bicicleta" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/bicicletas_1.png" class="img-responsive"
                                     onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a residencias">
                                 <span class="button">HURTO A BICICLETAS</span>
                             </td>
                             <td>
-                                <img id="hurto_vehiculo" data-toggle="modal" data-target="#myModalHurtoVE"
+                                <img id="hurto_vehiculo" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/vehiculos_1.png" class="img-responsive"
                                     onmouseover="hover(this);" onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a comercio">
                                 <span class="button">HURTO A VEHÍCULOS</span>
                             </td>
                             <td>
-                                <img id="hurto_motocicleta" data-toggle="modal" data-target="#myModalHurtoMO"
+                                <img id="hurto_motocicleta" data-toggle="modal" data-target="#myModalHurtoP"
                                     src="./index_files/motos_1.png" class="img-responsive" onmouseover="hover(this);"
                                     onmouseout="unhover(this);" style="cursor: pointer;"
                                     alt="Denuncia en linea hurto a personas">
@@ -330,73 +335,13 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+                </div>
             </div>
 
         </div>
-    </div>
+    </div>    
 
-
-    <div class="modal fade" id="myModalHurtoC">
-        <div class="modal-dialog modal-lg" id="myModalHurtoC_">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center" id="myModalLabelc">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>Si ha sido víctima de estafa o abuso de confianza, acérquese al punto de
-                                    recepción de denuncias más cercano de Policía Nacional o Fiscalía General de la
-                                    Nación.</li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a comercio. El hurto a comercio se refiere al apoderamiento de cosas, que se
-                                    encuentran dentro de un local o establecimiento comercial, o alguna de sus
-                                    dependencias externas, como bodegas o vehículos para el transporte de mercancía.
-                                </li>
-                                <li>Otra modalidad es la de hurto de mercancía en la cadena de suministro, la cual
-                                    se define como la actividad delictiva encaminada al hurto de mercancías en
-                                    lugares de permanencia (industrias manufactureras, proveedores, bodegas, centros
-                                    de depósito, parqueaderos, puertos, aeropuertos, empresas transportadoras, zonas
-                                    aduaneras) o en tránsito por vía pública (red vial, rural o urbana), excepto en
-                                    puntos de comercialización (hurto a entidades comerciales)</li>
-                            </ul>
-                            <p>
-                                <a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px; display:none">Consultar normatividad</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtop">
+    <div class="modal fade" id="myModalHurtoP">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -409,10 +354,10 @@
                         <div class="col-md-12" style="">
                             <ul style="text-align: justify;">
 
-                                <li id="liModalHurtoPersonas1"></li>
-                                <li id="liModalHurtoPersonas2"></li>
-                                <li id="liModalHurtoPersonas3"></li>
-                                <li id="liModalHurtoPersonas4"></li>
+                                <li id="liModalHurto1"></li>
+                                <li id="liModalHurto2"></li>
+                                <li id="liModalHurto3"></li>
+                                <li id="liModalHurto4"></li>
                             </ul>
                             <p><a href="./forms/FormularioHurtoComercio.html"
                                     style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
@@ -423,7 +368,7 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
+                                onclick="mostrarFrame();"
                                 type="button" class="btn btn-success">Continuar</button>
                         </div>
                     </div>
@@ -431,445 +376,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModalHurtor">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>Si ha sido víctima de estafa o abuso de confianza, acérquese al punto de
-                                    recepción de denuncias más cercano de Policía Nacional o Fiscalía General de la
-                                    Nación.</li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a residencia. El hurto a residencia se refiere al apoderamiento de cosas o
-                                    bienes, que pertenecen a una o varias personas que se encuentran al interior de
-                                    una casa, apartamento, finca, etc.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoAB">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El HURTO A CABEZAS DE GANADO O ABIGEATO consiste en apoderarse de ganado mayor
-                                    (bovino, mular o equino) o ganado menor (porcino, caprino u ovino), sin
-                                    consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener
-                                    algún provecho o beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoFinca">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a fincas. El HURTO A FINCAS consiste en apoderarese de los bienes y elementos
-                                    que se encuentran al interior de un inmueble ubicado en el área urbana o rural,
-                                    destinado al cultivo de productos agrícolas, a la crianza y producción de ganado
-                                    mayor y menor (bovino, molar, equino, porcino, caprino, ovino, bípedos), a la
-                                    producción de piscicultura, entre otros; sin el consentimeinto del poseedor,
-                                    tenedor o dueño, y con el propósito de obtener algún provecho o beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoCel">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    de celulares. El HURTO A CELULARES consiste en apoderarse de teléfonos móviles
-                                    inteligentes y/o celulares, sin consentimiento del poseedor, tenedor o dueño, y
-                                    con el propósito de obtener algún provecho o beneficio. </li>
-                                <li>El HURTO A CELULARES se presenta si la persona que robó el elemento tenía la
-                                    intención de hurtar de manera específica el celular. Si el hurto se dio además
-                                    sobre otros elementos (cartera, billetera, maletín, dinero, joyas, etc.), se
-                                    trata de HURTO A PERSONAS</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoFin">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a entidades financieras. El HURTO A ENTIDADES FINANCIERAS consiste en apoderarse
-                                    del dinero que se encuentra bajo la custodia de entidades financieras y/o
-                                    bancarias (bancos, cooperativas, fiducias, fondos, cajeros electrónicos,
-                                    vehículos de valores, entre otros), sacándolo de los lugares destinados para su
-                                    administración y/o manejo, con el propósito de obtener algún provecho o
-                                    beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoAupa">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a autopartes. El HURTO A AUTOPARTES consiste en apoderarse de las partes
-                                    esenciales (chasis, motor, ruedas, espejos, partes del motor o computador de
-                                    vehículo motorizado) de medios motorizados destinados al transporte de personas,
-                                    animales o cosas; sin el consentimiento del poseedor, tenedor o dueño, y con el
-                                    propósito de obtener algún provecho o beneficio. </li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoBi">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    de bicicletas. El HURTO DE BICICLETAS consiste en apoderarse de una bicicleta
-                                    sin consentimiento del poseedor, tenedor o dueño, y con el propósito de obtener
-                                    algún provecho o beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoVE">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    a vehículo. El HURTO DE VEHÍCULOS consiste en apoderarse, en su totalidad, de un
-                                    vehículo motorizado de cuatro llantas o más, que transporta personas, animales o
-                                    cosas, sin consentimiento del poseedor, tenedor o dueño, y con el propósito de
-                                    obtener algún provecho o beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="myModalHurtoMO">
-        <div class="modal-dialog modal-lg" id="modalTamano3">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close"></button>
-                    <h4 class="modal-title text-center" id="myModalLabelr">ANTES DE CONTINUAR TENGA PRESENTE</h4>
-                </div>
-                <div class="modal-body text-justify">
-                    <div class="row" style="padding-right: 20px;">
-                        <div class="col-md-12" style="">
-                            <ul style="text-align: justify;">
-
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de hurto consiste en apoderarse de una cosa mueble (joyas, dinero,
-                                    carro, celular, televisor, computador, etc.) sin consentimiento o voluntad de su
-                                    propietario, para obtener provecho. Si los elementos fueron entregados por el
-                                    propietario de manera voluntaria mediante artificios o engaños, el delito no es
-                                    hurto sino estafa. Si por el contrario usted entregó o confió un bien a otra
-                                    persona con la intención de que posteriormente fuera devuelto, y esta persona se
-                                    apropió del bien, se trataría de un delito de abuso de confianza y no de hurto.
-                                </li>
-                                <li>El delito de hurto tiene varias modalidades, entre las que se encuentra el hurto
-                                    de motocicleta. El HURTO DE MOTOCICLETAS consiste en apoderarse de una
-                                    motocicleta sin consentimiento del poseedor, tenedor o dueño, y con el propósito
-                                    de obtener algún provecho o beneficio.</li>
-                            </ul>
-                            <p><a href="./forms/FormularioHurtoComercio.html"
-                                    style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <button
-                                onclick="document.location.href=pagina=&#39;./forms/FormularioHurtoComercio.html?id=1&#39;;"
-                                type="button" class="btn btn-success">Continuar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="modal fade" id="myModalInformatico">
         <div class="modal-dialog modal-lg" id="modalTamano4">
             <div class="modal-content">
@@ -880,11 +387,7 @@
                 <div class="modal-body text-justify">
                     <div class="row" style="padding-right: 20px;">
                         <div class="col-md-12" style="">
-                            <p>
-                                Los delitos informáticos son conductas en que el o los delincuentes se valen de
-                                programas informáticos para cometer delitos como implantación de virus, suplantación
-                                de sitios web, estafas, violación de derechos de autor, piratería, etc.
-                            </p>
+                            <p id="pModalInformatico1"></p>
                             <p>
                                 <a href="./forms/FormularioHurtoComercio.html"
                                     style="color: blue; font-size: 16px;">Consultar normatividad</a>
@@ -914,11 +417,7 @@
                     <h4 class="modal-title text-center" id="myModalLabel6">ANTES DE CONTINUAR TENGA PRESENTE</h4>
                 </div>
                 <div class="modal-body text-justify">
-                    <p>
-                        El material de contenido de explotación sexual infantil es la representación gráfica de
-                        niños, niñas y/o adolescentes con contenido erótico sexual en archivos multimedia, esta
-                        actividad puede ser en tiempo real o simulada.
-                    </p>
+                    <p id="pModalPornografia1"></p>
                     <p>
                         <a href="#" style="color: blue; font-size: 16px;">Consultar normatividad</a>
                     </p>
@@ -947,22 +446,10 @@
                     <p style="text-align: justify;">Tenga en cuenta las siguientes recomendaciones después de
                         registrar la denuncia en línea:</p>
                     <ol style="text-align: justify;">
-                        <li>Si esta conducta se presentó a través de medios tecnológicos como dispositivos de
-                            almacenamiento (celulares, memorias USB, equipos de cómputo, Tablet, CD´S), por favor
-                            conserve esta información sin modificarla o alterarla, evite que sea manipulada por
-                            otras personas hasta que uno de nuestros funcionarios de policía judicial tome contacto
-                            con usted.</li>
-                        <li>Si la conducta se realizó en redes sociales como Facebook, Skype, Instagram, Twitter,
-                            Flickr, entre otras, por favor modifique la contraseña sin informarla a otras personas
-                            con el fin de preservar la información y ser entregada al policia judicial. Evite que
-                            sus hijos ingresen a las redes sociales sin supervisión adecuada con el fin de no
-                            alertar al victimario y/o elimine el contenido de información.</li>
-                        <li>Si se encuentra frente a esta actividad en tiempo real (Video chat en vivo), tome las
-                            capturas de pantalla necesarias donde demuestre usuarios, conexión, pagina por la cual
-                            se está transmitiendo el video y la imagen del niño, niña o adolescente, posteriormente
-                            guárdelas en un dispositivo de almacenamiento para ser entregadas al investigador.</li>
-                        <li>Si encuentra documentos impresos, fotografías con contenido erótico sexual infantil, por
-                            favor guárdelas para ser entregadas al investigador.</li>
+                        <li id="liModalTermPornografia1"></li>
+                        <li id="liModalTermPornografia2"></li>
+                        <li id="liModalTermPornografia3"></li>
+                        <li id="liModalTermPornografia4"></li>
                     </ol>
                 </div>
                 <div class="modal-footer">
@@ -985,31 +472,14 @@
                             <img src="./index_files/yonopago_.png" alt="ext">
                         </div>
                         <div class="col-md-8" style="">
-                            <p>
-                                Este proceso requiere de 24 horas para su validación, si usted requiere atención
-                                inmediata, por favor comuníquese a la línea gratuita 165, para que sea atendido por
-                                un investigador GAULA de su jurisdicción.
-                            </p>
-                            <p>
-                                La extorsión es un delito consistente en obligar a través de la utilización de
-                                violencia y amenazas a una persona para realizar, tolerar u omitir un acto en contra
-                                de su voluntad, con la intención de generar provecho ilícito o beneficio económico
-                                para sí o para un tercero.
-                            </p>
-                            <p style="font-weight: bold">
-                                No se considera el delito de extorsión:
-                            </p>
+                            <p id="pModalExtorsion1"></p>
+                            <p id="pModalExtorsion2"></p>
+                            <p style="font-weight: bold" id="pModalExtorsion3"></p>
                             <ul style="text-align: justify;">
-                                <li>Si está siendo obligado a realizar, tolerar u omitir alguna cosa sin que exista
-                                    un interés económico, es el delito de constreñimiento ilegal.</li>
-                                <li>Si está siendo atemorizado con la intención de causarle alarma, zozobra, terror
-                                    o miedo, es el delito de amenaza.</li>
-                                <li>Si le están exigiendo la entrega de dinero o alguna cosa para liberar a alguien
-                                    que se encuentra retenido en contra de su voluntad, es el delito de secuestro
-                                    extorsivo.</li>
-                                <li>Si por medio de artimañas y engaños le realizan exigencias económicas
-                                    induciéndolo y manteniéndole en el error estaría frente al delito de estafa.
-                                </li>
+                                <li id="pModalExtorsion4"></li>
+                                <li id="pModalExtorsion5"></li>
+                                <li id="pModalExtorsion6"></li>
+                                <li id="pModalExtorsion7"></li>
                             </ul>
                         </div>
 
@@ -1040,39 +510,17 @@
                         <div class="col-md-12" style="">
                             <ul style="text-align: justify;">
 
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
+                                <li id="liModalFalsedad1"></li>
 
-                                <li>Artículo 286. Falsedad ideológica en documento público. El que falsifique
-                                    documento público que pueda servir de prueba. SE ENTIENDE POR FALSEDAD
-                                    IDEOLÓGICA LA MODIFICACIÓN DE UN DOCUMENTO YA EXISTENTE. Este tipo de falsedad
-                                    solo puede realizarla una persona en su calidad de servidor público.</li>
+                                <li id="liModalFalsedad2"></li>
 
-                                <li>Artículo 287. Falsedad material en documento público. El que falsifique
-                                    documento público que pueda servir de prueba. SE ENTIENDE POR FALSEDAD MATERIAL
-                                    la creación o imitación total o parcial de un documento público. Cualquier
-                                    persona puede incurrir en este delito. Si la misma persona que crea el documento
-                                    es la que lo usa, se tipificará solo el delito de falsedad en documento público.
-                                </li>
+                                <li id="liModalFalsedad3"></li>
 
-                                <li>Artículo 289. Falsedad en documento privado. El que falsifique documento privado
-                                    que pueda servir de prueba. SE ENTIENDE POR FALSEDAD LA MODIFICACIÓN, ALTERACIÓN
-                                    O ELABORACIÓN INTEGRAL DEL DOCUMENTO PRIVADO. Para que este delito se configure,
-                                    el documento privado no solo debe haber sido falsificado sino también usado.
-                                </li>
+                                <li id="liModalFalsedad4"></li>
 
-                                <li>Artículo 291. Uso de documento falso. El que sin haber concurrido a la
-                                    falsificación hiciere uso de documento público falso que pueda servir de prueba.
-                                    SE ENTIENDE POR USO DE DOCUMENTO FALSO LA UTILIZACIÓN DEL MISMO CON LA INTENCIÓN
-                                    DE BUSCAR UNA BENEFICIO. Quien hace uso del documento no debe haber participado
-                                    en su falsificación.</li>
+                                <li id="liModalFalsedad5"></li>
 
-                                <li>Si el delito que usted quiere poner en conocimiento no se encuentra descrito en
-                                    los anteriores tipos penales, acérquese al punto de recepción de denuncias más
-                                    cercano. </li>
+                                <li id="liModalFalsedad6"></li>
                             </ul>
                             <p><a href="./forms/FormularioHurtoComercio.html"
                                     style="color: blue; font-size: 16px;">Consultar normatividad</a></p>
@@ -1106,17 +554,9 @@
                             <ul style="text-align: justify;">
 
 
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
-                                <li>El delito de estafa se establece cuando una persona, a través de engaño o
-                                    artificios, obtiene beneficio sobre el patrimonio de otra persona o personas.
-                                </li>
-                                <li>En el delito de estafa la víctima NO es intimidada ni obligada sino llevada a
-                                    cometer un error por medio del engaño. Si la persona SÍ es obligada o intimidada
-                                    puede tratarse de Extorsión o Constreñimiento ilegal, según cada caso. </li>
+                                <li id="liModalEstafa1"></li>
+                                <li id="liModalEstafa2"></li>
+                                <li id="liModalEstafa3"></li>
 
                             </ul>
                             <p><a href="./forms/FormularioHurtoComercio.html"
@@ -1223,20 +663,13 @@
                         <div class="col-md-12" style="">
                             <ul style="text-align: justify;">
 
-                                <li>El incidente registrado por usted se verificará dentro de las siguientes 24
-                                    horas, para determinar si los hechos relatados corresponden a un delito. Si
-                                    ncesita atención inmediata para la creación de su denuncia, se recomienda
-                                    acercarse personalmente a uno de los puntos de recepción de denuncias de la
-                                    Policía Nacional o de la Fiscalía General de la Nación.</li>
+                                <li id="liModalMaltratoAnimal1"></li>
 
                             </ul>
                             <h4 class="modal-title text-center">Tipos de violencia </h4>
                             <br>
                             <ul style="text-align: justify;">
-                                <li>La crueldad hacia los animales, también llamada crueldad animal, abuso animal o
-                                    maltrato animal, comprende comportamientos que causan dolor innecesario o estrés
-                                    a los animales no humanos. Los mismos van desde la negligencia en los cuidados
-                                    básicos hasta la tortura, la mutilación o la muerte intencionada.</li>
+                                <li id="liModalMaltratoAnimal2"></li>
                             </ul>
 
                         </div>
@@ -1255,6 +688,13 @@
             </div>
         </div>
     </div>
+
+    <iframe 
+    id="frame"
+    src="./forms/FormularioHurtoComercio.html?id=1;" 
+    style="width: 100%; height: 100%;"
+    >
+    </iframe>
 
 </body>
 

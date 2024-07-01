@@ -1,4 +1,4 @@
-#start-btn, #stop-btn, #start-btn-relato,#stop-btn-relato  {
+.start-btn, .stop-btn  {
     font-size: 24px; /* Aumenta el tamaño del icono */
     background-color: #4CAF50; /* Fondo verde */
     color: white; /* Color del icono */
@@ -11,18 +11,19 @@
     transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
 }
 
-#stop-btn, #stop-btn-relato {
+.stop-btn {
     background-color: #f44336; /* Fondo rojo */
 }
 
-#start-btn:hover, #stop-btn:hover {
+.start-btn:hover {
     background-color: #45a049; /* Cambio de color al pasar el ratón (hover) */
     transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
 
-#stop-btn:hover {
+.stop-btn:hover {
     background-color: #e53935; /* Cambio de color al pasar el ratón (hover) */
 }
+
 
 #read-btn {
     font-size: 24px; /* Aumenta el tamaño del icono */
