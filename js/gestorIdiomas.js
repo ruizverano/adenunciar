@@ -1,8 +1,8 @@
 function googleTranslateElementInit() {
     new google.translate.TranslateElement(
       {
-        pageLanguage: 'en',
-        includedLanguages: 'en,es,pt',
+        pageLanguage: 'es',
+        includedLanguages: 'en,es,pt,fr,de,ja',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
         autoDisplay: false
       },
