@@ -19,20 +19,75 @@ if ('webkitSpeechRecognition' in window) {
     });
 
     const commands = {
-        "hola": () => {            
+        "hola": () => {
             bienvenida();
+            speak("Soy el portal a denunciar! plus! una versión mejorada de este recurso ciudadano, más inclusiva, puede hacer uso de nuevas funcionalidades incorporadas para que su experiencia durante el acceso a la justicia sea mas cómoda y eficaz");
+        },
+
+        // "dinos que eres": () => {    
+        //     recognition.stop();                    
+        // },
+
+        "delitos informáticos": () => {            
+            document.getElementById('delitos_informatico').click();
+            recognition.stop();
+            speak("Está ingresando a la opción delitos informáticos!.");
+        },
+
+        "pornografía infantil": () => {            
+            document.getElementById('pornografia_infantil').click();
+            recognition.stop();
+            speak("Está ingresando a la opción pornografia infantil!.");
+        },
+
+        "extorsión": () => {            
+            document.getElementById('extorsi').click();
+            recognition.stop();
+            speak("Está ingresando a la opción extorsión!.");
+        },
+
+        "sala de denúncias": () => {            
+            document.getElementById('salas').click();
+            recognition.stop();
+            speak("Está ingresando a la opción sala de denúncias!.");
+        },
+
+        "falsedad en documentos": () => {            
+            document.getElementById('falsedad').click();
+            recognition.stop();
+            speak("Está ingresando a la opción falsedad en documentos!.");
+        },
+
+        "estafa": () => {            
+            document.getElementById('estafa').click();
+            recognition.stop();
+            speak("Está ingresando a la opción estafa!.");
+        },
+
+        "maltrato animal": () => {            
+            document.getElementById('maltratoanimal').click();
+            recognition.stop();
+            speak("Está ingresando a la opción maltrato animal!.");
         },
 
         "hurto": () => {
             panelHurto();            
         },
 
-        "a personas": () => {
+        "personas": () => {
             panelHurtoPersonas();
+            recognition.stop();
             speak("Está ingresando a la opción hurto a personas!.");
         },
 
+        "comercio": () => {
+            panelHurtoPersonas();
+            recognition.stop();
+            speak("Está ingresando a la opción hurto a entidades comerciales!.");
+        },
+
         "regresar": () => {
+            recognition.stop();
             regresar();            
         }
     };
@@ -62,15 +117,15 @@ if ('webkitSpeechRecognition' in window) {
 
 
     recognition.onstart = () => {
-        console('Reconocimiento de voz iniciado.');
+        console.log('Reconocimiento de voz iniciado.');
     };
 
     recognition.onend = () => {
-        console('Reconocimiento de voz finalizado.');
+        console.log('Reconocimiento de voz finalizado.');
     };
 
     recognition.onerror = (event) => {
-        console('Error en el reconocimiento de voz:', event.error);
+        console.log('Error en el reconocimiento de voz:', event.error);
     };
 
     startBtn.addEventListener('click', () => {
