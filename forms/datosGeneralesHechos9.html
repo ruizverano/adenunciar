@@ -48,8 +48,8 @@
 
 	<link rel="stylesheet" href="../css/funcionalidadesPlus.css">
 
-    
-   	<style type="text/css">
+
+	<style type="text/css">
 		.hideGridColumn {
 			display: none;
 		}
@@ -1489,24 +1489,24 @@
 		}
 	</style>
 
-	
+
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
-    
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 	<script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 
 	<script type="text/javascript" src="../js/gestorIdiomas.js"></script>
 
 </head>
 
-<body oncontextmenu="return false" class="" style="">	
+<body oncontextmenu="return false" class="" style="">
 
 	<div id="wrap">
 		<form name="aspnetForm" method="post"
@@ -1572,8 +1572,8 @@
 				}
 				//]]>
 			</script>
-			
-			
+
+
 
 			<div>
 
@@ -1617,7 +1617,7 @@
 					</div>
 				</div>
 			</div> -->
-			
+
 
 			<script src="./datosGeneralesHechos9_files/jquery-migrate.js.descarga" type="text/javascript"></script>
 			<script src="./datosGeneralesHechos9_files/kendo.web.min.js.descarga" type="text/javascript"></script>
@@ -1723,30 +1723,53 @@
 									<div class="col-md-3">
 										<div class="form-group has-feedback">
 											<label class="Label">Hora hechos:</label>
-											<span class="k-widget k-timepicker k-header"
-												style="width: 100%; height: 26px; font-size: 12px;"><span
-													class="k-picker-wrap k-state-default"><input
-														name="ctl00$ContentPlaceHolder3$txtHoraHechos" type="text"
-														maxlength="5" id="ctl00_ContentPlaceHolder3_txtHoraHechos"
+											 <!-- <input 
+											 type="time"
+											 style="width:100%;height: 26px; font-size: 12px;"
+											 maxlength="5"
+											 class="k-input" 
+											 > -->
+											 <span class="k-widget k-timepicker k-header"
+												style="width: 100%; height: 26px; font-size: 12px;">
+												<span class="k-picker-wrap k-state-default">
+													<input
+														name="ctl00$ContentPlaceHolder3$txtHoraHechos" 
+														type="time"
+														maxlength="5" 
+														id="ctl00_ContentPlaceHolder3_txtHoraHechos4"
 														tabindex="81" onblur="CheckTime(this)" filtertype="Numbers"
 														placeholder="formato hora 00:00"
 														style="width:100%;height: 26px; font-size: 12px;"
-														data-role="timepicker" class="k-input" role="textbox"
-														aria-haspopup="true" aria-expanded="false"
-														aria-owns="ctl00_ContentPlaceHolder3_txtHoraHechos_timeview"
-														readonly="readonly"
+														data-role="timepicker" 
+														class="k-input" 
+														role="textbox"
+														aria-haspopup="true" 
+														aria-expanded="false"
+														aria-owns="ctl00_ContentPlaceHolder3_txtHoraHechos_timeview"														
 														data-bv-field="ctl00$ContentPlaceHolder3$txtHoraHechos"><i
 														class="form-control-feedback"
 														data-bv-icon-for="ctl00$ContentPlaceHolder3$txtHoraHechos"
-														style="display: none;"></i><span unselectable="on"
-														class="k-select" role="button"
-														aria-controls="ctl00_ContentPlaceHolder3_txtHoraHechos_timeview"><span
-															unselectable="on"
-															class="k-icon k-i-clock">select</span></span></span></span>
-											<small class="help-block" data-bv-validator="stringLength"
+														style="display: none;"
+													>
+
+													</i>
+													<span unselectable="on" class="k-select" role="button"
+														aria-controls="ctl00_ContentPlaceHolder3_txtHoraHechos_timeview">
+														<span unselectable="on" class="k-icon k-i-clock">
+															select
+														</span>
+													</span>
+												</span>
+											</span>
+											<small 
+												class="help-block" 
+												data-bv-validator="stringLength"
 												data-bv-for="ctl00$ContentPlaceHolder3$txtHoraHechos"
-												data-bv-result="NOT_VALIDATED" style="display: none;">Please enter a
-												value with valid length</small>
+												data-bv-result="NOT_VALIDATED" 
+												style="display: none;"
+											>
+												Please enter a value with valid length
+											</small>
 										</div>
 									</div>
 								</div>
@@ -3268,26 +3291,14 @@
 												</label>
 												<span id="ctl00_ContentPlaceHolder3_vtxtCoordenadas"
 													style="display:inline-block;color:Red;width:10px;visibility:hidden;">*</span>
-												<input 
-													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
-													type="text"
-													id="latitud_txtCoordenadas" 
-													tabindex="86"
-													onfocus="mostrarmodalCoordenadas();" 
-													class="form-control"
-													placeholder="Latitud" 
-													style="text-transform: uppercase;"
-												/>
-												<input 
-													name="ctl00$ContentPlaceHolder3$txtCoordenadas" 
-													type="text"
-													id="longitud_txtCoordenadas" 
-													tabindex="86"
-													onfocus="mostrarmodalCoordenadas();" 
-													class="form-control"
-													placeholder="Longitud" 
-													style="text-transform: uppercase;"
-												/>
+												<input name="ctl00$ContentPlaceHolder3$txtCoordenadas" type="text"
+													id="latitud_txtCoordenadas" tabindex="86"
+													onfocus="mostrarmodalCoordenadas();" class="form-control"
+													placeholder="Latitud" style="text-transform: uppercase;" />
+												<input name="ctl00$ContentPlaceHolder3$txtCoordenadas" type="text"
+													id="longitud_txtCoordenadas" tabindex="86"
+													onfocus="mostrarmodalCoordenadas();" class="form-control"
+													placeholder="Longitud" style="text-transform: uppercase;" />
 											</div>
 										</div>
 
@@ -3858,7 +3869,7 @@
 													<option value="R">RURAL</option>
 
 												</select>
-												
+
 												<div class="chosen-container chosen-container-single"
 													style="width: 100%;" title=""
 													id="ctl00_ContentPlaceHolder3_ddlZona_chosen">
@@ -3882,12 +3893,15 @@
 												<h4><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Relato de
 													los hechos</h4>
 											</div>
-												<!--BOTONES PARA TRANSCRIBIR Y DAR COMANDOS DE VOZ-->
+											<!--BOTONES PARA TRANSCRIBIR Y DAR COMANDOS DE VOZ-->
 
-												<button type="button"  id="start-btn-relato" onclick="transcribirVoz('txtRelatoDenuncia')" class="start-btn"><i class="fa-solid fa-microphone"></i></button>
-												<button type="button" id="stop-btn-relato" onclick="pararTrancripcion()" class="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>        
+											<button type="button" id="start-btn-relato"
+												onclick="transcribirVoz('txtRelatoDenuncia')" class="start-btn"><i
+													class="fa-solid fa-microphone"></i></button>
+											<button type="button" id="stop-btn-relato" onclick="pararTrancripcion()"
+												class="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>
 
-												<!--------------------------------->     
+											<!--------------------------------->
 											<p id="result"></p>
 											<div class="panel-body">
 												<div id="ctl00_ContentPlaceHolder3_UpdatePanel4">
@@ -3905,16 +3919,16 @@
 																	class="etiqueta" style="border: hidden">
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextRelatoDenuncia"
-																	rows="2" 
-																	cols="20" 
-																	id="txtRelatoDenuncia"
+																	rows="2" cols="20" id="txtRelatoDenuncia"
 																	tabindex="83" class="form-control"
 																	placeholder="Recuerde que este campo es obligatorio y tiene un maximo de 3900 caracteres"
 																	onkeydown="kotoba()" onkeyup="kotoba()"
 																	style="height:100px;">
 																</textarea>
 																<!--BOTON PARA ESCUCHAR O SINTETIZAR TEXTO-->
-																<button id="read-btn" title="Leer mi relato" type="button" onClick='speak($("#txtRelatoDenuncia").val())'>
+																<button id="read-btn" title="Leer mi relato"
+																	type="button"
+																	onClick='speak($("#txtRelatoDenuncia").val())'>
 																	<i class="fa-sharp fa-solid fa-volume-high"></i>
 																</button>
 																<!---------------------------------------------------->
@@ -4460,28 +4474,34 @@
 															<div class="form-group">
 																<!--BOTONES PARA TRANSCRIBIR Y DAR COMANDOS DE VOZ-->
 
-																<button type="button"  id="start-btn-perjuicios" onclick="transcribirVoz('txtPerjuicio')" class="start-btn"><i class="fa-solid fa-microphone"></i></button>
-																<button type="button" id="stop-btn-perjuicios" onclick="pararTrancripcion()" class="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>        
+																<button type="button" id="start-btn-perjuicios"
+																	onclick="transcribirVoz('txtPerjuicio')"
+																	class="start-btn"><i
+																		class="fa-solid fa-microphone"></i></button>
+																<button type="button" id="stop-btn-perjuicios"
+																	onclick="pararTrancripcion()" class="stop-btn"><i
+																		class="fa-solid fa-microphone-slash"></i></button>
 
-															<!--------------------------------->    
+																<!--------------------------------->
 																<span id="ctl00_ContentPlaceHolder3_BienHurtado"
 																	class="etiqueta">Además del bien o dinero que le fue
 																	hurtado, indique el perjuicio sufrido</span>
 																<input name="ctl00$ContentPlaceHolder3$Text5"
 																	type="text" id="ctl00_ContentPlaceHolder3_Text5"
 																	class="etiqueta" style="border: hidden">
-																	
+
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextBienHurtado"
-																	rows="2" cols="20"
-																	id="txtPerjuicio"
+																	rows="2" cols="20" id="txtPerjuicio"
 																	class="form-control"
 																	placeholder="Por favor, ingrese la información correspondiente"
 																	data-bv-notempty-message="El valor es requerido"
 																	style="height:100px;">
 																</textarea>
 																<!--BOTON PARA ESCUCHAR O SINTETIZAR TEXTO-->
-																<button id="read-btn" title="Leer mi relato" type="button" onClick='speak($("#txtPerjuicio").val())'>
+																<button id="read-btn" title="Leer mi relato"
+																	type="button"
+																	onClick='speak($("#txtPerjuicio").val())'>
 																	<i class="fa-sharp fa-solid fa-volume-high"></i>
 																</button>
 																<!---------------------------------------------------->
@@ -4495,10 +4515,15 @@
 															<div class="form-group">
 																<!--BOTONES PARA TRANSCRIBIR Y DAR COMANDOS DE VOZ-->
 
-																<button type="button"  id="start-btn-ingreso" onclick="transcribirVoz('txtIngreso')" class="start-btn"><i class="fa-solid fa-microphone"></i></button>
-																<button type="button" id="stop-btn-ingreso" onclick="pararTrancripcion()" class="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>        
+																<button type="button" id="start-btn-ingreso"
+																	onclick="transcribirVoz('txtIngreso')"
+																	class="start-btn"><i
+																		class="fa-solid fa-microphone"></i></button>
+																<button type="button" id="stop-btn-ingreso"
+																	onclick="pararTrancripcion()" class="stop-btn"><i
+																		class="fa-solid fa-microphone-slash"></i></button>
 
-																<!--------------------------------->  
+																<!--------------------------------->
 																<span
 																	id="ctl00_ContentPlaceHolder3_IngresoEstablecimiento"
 																	class="etiqueta">¿Cómo ingresaron al
@@ -4508,15 +4533,16 @@
 																	class="etiqueta" style="border: hidden">
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextIngresoEstablecimiento"
-																	rows="2" cols="20"
-																	id="txtIngreso"
+																	rows="2" cols="20" id="txtIngreso"
 																	class="form-control"
 																	placeholder="Por favor, ingrese la información correspondiente"
 																	data-bv-notempty-message="El valor es requerido"
 																	style="height:100px;">
 																</textarea>
 																<!--BOTON PARA ESCUCHAR O SINTETIZAR TEXTO-->
-																<button id="read-btn" title="Leer mi relato" type="button" onClick='speak($("#txtIngreso").val())'>
+																<button id="read-btn" title="Leer mi relato"
+																	type="button"
+																	onClick='speak($("#txtIngreso").val())'>
 																	<i class="fa-sharp fa-solid fa-volume-high"></i>
 																</button>
 																<!---------------------------------------------------->
@@ -4639,10 +4665,15 @@
 															<div class="col-md-12">
 																<!--BOTONES PARA TRANSCRIBIR Y DAR COMANDOS DE VOZ-->
 
-																<button type="button"  id="start-btn-representante" onclick="transcribirVoz('txtRepresentante')" class="start-btn"><i class="fa-solid fa-microphone"></i></button>
-																<button type="button" id="stop-btn-representante" onclick="pararTrancripcion()" class="stop-btn"><i class="fa-solid fa-microphone-slash"></i></button>        
+																<button type="button" id="start-btn-representante"
+																	onclick="transcribirVoz('txtRepresentante')"
+																	class="start-btn"><i
+																		class="fa-solid fa-microphone"></i></button>
+																<button type="button" id="stop-btn-representante"
+																	onclick="pararTrancripcion()" class="stop-btn"><i
+																		class="fa-solid fa-microphone-slash"></i></button>
 
-																<!--------------------------------->  
+																<!--------------------------------->
 																<span id="ctl00_ContentPlaceHolder3_IndiquePropietario"
 																	class="etiqueta">Indique quién es el propietario,
 																	representante legal, administrador o apoderado del
@@ -4653,15 +4684,16 @@
 																	class="etiqueta" style="border: hidden">
 																<textarea
 																	name="ctl00$ContentPlaceHolder3$TextIndiquePropietario"
-																	rows="2" cols="20"
-																	id="txtRepresentante"
+																	rows="2" cols="20" id="txtRepresentante"
 																	class="form-control"
 																	placeholder="Por favor, ingrese la información correspondiente"
 																	data-bv-notempty-message="El valor es requerido"
 																	style="height:100px;">
 																</textarea>
 																<!--BOTON PARA ESCUCHAR O SINTETIZAR TEXTO-->
-																<button id="read-btn" title="Leer mi relato" type="button" onClick='speak($("#txtRepresentante").val())'>
+																<button id="read-btn" title="Leer mi relato"
+																	type="button"
+																	onClick='speak($("#txtRepresentante").val())'>
 																	<i class="fa-sharp fa-solid fa-volume-high"></i>
 																</button>
 																<!---------------------------------------------------->
@@ -5060,7 +5092,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 
 				<div class="modal fade" id="Coordenadas" tabindex="-1">
 					<div class="modal-dialog modal-lg">
@@ -5080,17 +5112,18 @@
 								</div>
 							</div>
 							<div class="modal-body">
-									
+
 								<div class="row">
-									<div id="map"></div>						
+									<div id="map"></div>
 								</div>
-								
+
 								<div class="row">
 									<div class="col-md-3">
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<p>Latitud: <span id="latitud"></span></p><p>Longitud: <span id="longitud"></span></p>
+											<p>Latitud: <span id="latitud"></span></p>
+											<p>Longitud: <span id="longitud"></span></p>
 										</div>
 									</div>
 									<div class="col-md-3">
