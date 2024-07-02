@@ -1,0 +1,33 @@
+Para lanzar la página local mediante un servidor HTTP en una tablet, puedes seguir diferentes enfoques dependiendo del sistema operativo de tu tablet (Android o iOS).
+
+Android
+Instalar Termux:
+
+Descargar la app Termux desde la Google Play Store.
+Configurar Termux:
+
+Abrir Termux y ejecutar los siguientes comandos para instalar Python y configurar el servidor HTTP:
+
+pkg update
+pkg install python
+cd /path/to/your/directory  # Navega al directorio donde están los archivos de tu página web
+python -m http.server 8000
+
+Esto iniciará un servidor HTTP en el puerto 8000. Puedes acceder a tu página local abriendo un navegador en la tablet y navegando a http://localhost:8000.
+
+
+iOS
+Instalar una app de terminal y Python:
+
+Puedes usar una app como iSH para tener un terminal en tu dispositivo iOS.
+Alternativamente, puedes buscar otras apps que permitan ejecutar scripts de Python.
+Configura el servidor HTTP:
+
+Abrir la app de terminal y ejecuta los comandos para instalar Python y configurar el servidor HTTP:
+
+apk update
+apk add python3
+cd /path/to/your/directory  # Navega al directorio donde están los archivos de tu página web
+python3 -m http.server 8000
+
+Al igual que en Android, esto iniciará un servidor HTTP en el puerto 8000, y puedes acceder a tu página local navegando a http://localhost:8000 en un navegador.
