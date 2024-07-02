@@ -24,9 +24,11 @@
     function sintetizarModales(texto,identificador){
         texto.forEach((txt,index)=>{
             const elementId = `${identificador}${index +1}`
-            const element = document.getElementById(elementId);
-            if(element){
-                element.innerHTML =`${txt}<button onClick='speak("${txt}")'><i class="fa-sharp fa-solid fa-volume-high"></i></button>`;
+            const element = document.getElementById(elementId); 
+            if(element){    
+                const valorElement = element.textContent || element.innerText;
+                //element.innerHTML =`${txt}<button onClick='speak("${txt.replace(/"/g, '&quot;')}")'><i class="fa-sharp fa-solid fa-volume-high"></i></button>`;                
+                element.innerHTML = `${txt}<button onClick='(function() { speak(document.getElementById("${elementId}").textContent || document.getElementById("${elementId}").innerText); })()'><i class="fa-sharp fa-solid fa-volume-high"></i></button>`;
             }
         });
     }
@@ -47,7 +49,8 @@
         $("#myModalHurtop").slideDown();        
     }
 
-    function mostrarFrame(){
+    function mostrarFrame(){        
+        $("#myModalHurtoP").modal('hide');
         $("#botones_hurto").slideUp();
         $("#botones_otro").slideUp();
         $("#frame").slideDown();
